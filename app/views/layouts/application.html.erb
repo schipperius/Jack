@@ -1,40 +1,109 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <title>The Book of Jack</title>
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode/svn/trunk/html5.js"
-    type="text/javascript"></script>
+
+  <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
   <![endif]-->
 
+  <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
+  <![endif]-->
+
+  <!--[if IE 8]> <html class="no-js lt-ie9" lang="en">
+  <![endif]-->
+
+  <!--[if gt IE 8]> <!-->
+  <!--<![endif]-->
+
+  <!--[if lt IE 9]> <script
+    src="http://html5shim.googlecode.com/svn/trunk/html5.js"
+    type="text/javascript"></script>
+    <![endif]-->
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 </head>
-<body>
 
-  <div class="navbar">
+<body id="container" class="container-fluid" data-spy="scroll" data-target=".subnav" data-offset="50">
+
+  <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".collapse">
+      <div class="container-fluid">
+
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#">Book of Jack</a>
+        <a class="brand" href="#">The Book of Jack</a>
+
         <div class="nav-collapse">
+
           <ul class="nav">
             <li><%= link_to "Browse Articles" %></li>
-            <li><%= link_to "Gallery" %></li>
+            <li class="dropdown">
+              <a href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown">
+                Gallery
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Photos" %></li>
+                <li><%= link_to "Videos" %></li>
+                <li><%= link_to "Music" %></li>
+              </ul>
+            </li>
             <li><%= link_to "Cartography" %></li>
-            <li><%= link_to "Contact Us" %></li>
           </ul>
+
+          <form class="navbar-search pull-left">
+          <input type="text" class="search-query" placeholder="Search Articles">
+          </form>
+
+          <ul class="nav pull-right">
+            <li class="dropdown">
+              <a href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown">
+                About
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Forward" %></li>
+                <li><%= link_to "Preface" %></li>
+                <li><%= link_to "Author" %></li>
+                <li><%= link_to "Bibli" %></li>
+                <li><%= link_to "Colophon" %></li>
+                <li><%= link_to "Plagiarism" %></li>
+                <li><%= link_to "Copyright" %></li>
+              </ul>
+            </li>
+            <li><%= link_to "Contact" %></li>
+          </ul>
+
         </div>
+
       </div>
     </div>
   </div>
+
+  <header id="header" class="row-fluid">
+    <section id="logo" class="round">
+      <img>
+        <%= link_to logo, root_path %>
+      <img>
+    </section>
+    <hgroup id="hgroup">
+      <h1><span>The Book of Jack</span></h1>
+      <h2><span>An entertaining exploration of all things Jack</span></h2>
+    </hgroup>
+  </header>
 
   <div class="container-fluid">
     <div class="row-fluid">
@@ -46,6 +115,8 @@
     </div>
   </div>
 
-</body>
-</html>
+  <%= javascript_include_tag "application" %>
 
+</body>
+
+</html>
