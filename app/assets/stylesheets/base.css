@@ -1,0 +1,36 @@
+/* 
+		Copyright (c) 2010. Schipperius. All rights reserved.
+
+==============================================================================
+		Application Layout
+============================================================================== */
+
+html {
+	height: 100%;
+}
+
+body #container { /* body id=container */
+	margin: auto; /* center in viewport */
+	width: 100%; /* fix page width */
+}
+
+.round { /* rounded corners */
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+header img {
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#logo {
+	margin: 1em;
+}
+
+#hgroup span { /* to hide h1 and h2 in the header */
+	display: none;
+}
