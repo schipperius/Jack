@@ -11,7 +11,15 @@ group :assets do
   gem "twitter-bootstrap-rails", "~> 2.0.3"
 end
 
-group :development, :test do
+group :development do
+  gem 'sqlite3', '1.3.5'
+  gem "guard", "~> 1.0.1"
+  gem "guard-livereload", "~> 0.4.2"
+  gem "foreman", "~> 0.40.0"
+  gem "growl", "~> 1.0.3"
+end
+
+group :test do
   gem 'sqlite3', '1.3.5'
 end
 

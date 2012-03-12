@@ -80,6 +80,7 @@
                 <li><%= link_to "Author" %></li>
                 <li><%= link_to "Bibli" %></li>
                 <li><%= link_to "Colophon" %></li>
+                <li class="divider"></li>
                 <li><%= link_to "Plagiarism" %></li>
                 <li><%= link_to "Copyright" %></li>
               </ul>
@@ -89,7 +90,7 @@
 
         </div> <!-- end .nav-collapse -->
 
-      </div> <!-- end .container-fluid -->
+      </div> <!-- end .container-fluid -->x
     </div>
   </nav>
 
@@ -107,18 +108,31 @@
 
   <section class="container-fluid">
     <div class="row-fluid">
+
       <div class="span9">
         <%= yield %>
       </div>
-      <div class="span3">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+
+      <section class="list_tag round pull-right span3">
+        <ul class="nav nav-list">
+          <li class="nav-header">Articles by Tagging</li>
+          <li class="active"><a href="#"></i>Historical</a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">Tools</a></li>
+          <li><a href="#">Tools</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Toys</a></li>
+          <li><a href="#">Peoples</a></li>
+          <li><a href="#">Fish</a></li>
+          <li><a href="#">Garage</a></li>
+          <li><a href="#">Kitchen</a></li>
+        </ul>
+      </section>
+
     </div>
   </section>
 
   <%= javascript_include_tag "application" %>
 
-</body>
-
+</body> 
 </html>
