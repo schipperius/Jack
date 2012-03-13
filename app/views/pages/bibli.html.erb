@@ -1,36 +1,49 @@
 <%= render 'pages/nav' %>
-<article id="main" class="yui3-u-1">
 
-<h1>Bibliography</h1>
+<div class="row-fluid"><!-- article -->
+  <div class="span12">
 
-<p class="first"><span class="a">A</span><span class="firstLine">n enumerative bibliography </span>also called compilative, reference or systematic, is an overview of publications within a particular category. The following books have been read and reread many times. I highly recommend these titles as they reflect a sampling of the best web design and development books in my library.</p>
+    <h2>Bibliography</h2>
 
-<nav id="tabs" class="demo">
-  <ul>
-    <a><%= image_tag("flags/canada.png", :alt => "Canada") %>
-    <a><%= image_tag("flags/us.png", :alt => "United States") %></a>
-    <a><%= image_tag("flags/uk.png", :alt => "United Kingdom") %></a>
-    <a><%= image_tag("flags/germany.png", :alt => "Germany") %></a>
-    <a><%= image_tag("flags/france.png", :alt => "France") %></a>
-    <a><%= image_tag("flags/italy.png", :alt => "Italy") %></a>
-  </ul>
-</nav>
+    <div class="row-fluid"> <!-- section -->
+      <div class="span6">
+        <p class="first"><span class="a">A</span><span class="firstLine">n enumerative bibliography </span>also called compilative, reference or systematic, is an overview of publications within a particular category. The following books have been read and reread many times. I highly recommend these titles as they reflect a sampling of the best web design and development books in my library.</p>
+      </div>
+      <div class="span6">
+        <p>If you choose to click through to Amazon and purchase one of the recommended titles, I will receive a small referral fee which will help offset the cost of hosting this site. Your support is greatly appreciated, Thank you.</p>
+      </div>
+    </div>
 
-<p>If you choose to click through to Amazon and purchase one of the recommended titles, I will receive a small referral fee which will help offset the cost of hosting this site. Your support is greatly appreciated, Thank you.</p>
+    <div class="row-fluid"> <!-- section -->
+      <div class="span12">
+        <div class="navbar">
+          <ul>
+            <a><%= image_tag("flags/canada.png", :alt => "Canada") %></a>
+            <a><%= image_tag("flags/us.png", :alt => "United States") %></a>
+            <a><%= image_tag("flags/uk.png", :alt => "United Kingdom") %></a>
+            <a><%= image_tag("flags/germany.png", :alt => "Germany") %></a>
+            <a><%= image_tag("flags/france.png", :alt => "France") %></a>
+            <a><%= image_tag("flags/italy.png", :alt => "Italy") %></a>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <div class="row-fluid"> <!-- section -->
+      <div class="span12">
+        <h3>Footnotes</h3>
+      </div>
+    </div>
 
-<div class="pagination">
-<a href="map#top" class="prev-page">
-<<&nbsp;<span class="number">Map</span></a>
-<a href="colophon#top" class="next-page">
-<span class="number">Colophon</span>&nbsp;>></a>
-</div> <!-- end class pagination -->
+    <div class="row-fluid"> <!-- section -->
+      <div class="span12">
+        <ul class="pager pull-right">
+          <li><a href="#">Previous</a></li>
+          <li><a href="#">Next</a></li>
+          <li><a href="#">Top</a></li>
+        </ul>
+      </div>
+    </div>
 
-<aside id="cont" class="footnotes">
-<div class="demo other">			
-<h1>Footnotes</h1>
-<ol class="collapse">
-</ol>
-</div> 
-</aside> <!-- end class footnotes -->
-</article> <!-- end class main -->
+  </div>
+</div>

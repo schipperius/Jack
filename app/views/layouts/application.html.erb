@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 
-  <title>The Book of Jack</title>
+  <title><%= title %></title>
 
   <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
   <![endif]-->
@@ -23,10 +22,14 @@
     type="text/javascript"></script>
     <![endif]-->
 
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <%= favicon_link_tag 'favicon.ico' %>
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
+
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
 </head>
 
 <body id="container" class="container-fluid" data-spy="scroll" data-target=".subnav" data-offset="50">
@@ -95,25 +98,25 @@
   </nav>
 
   <header id="header" class="row-fluid">
-    <section id="logo" class="round">
+    <div id="logo" class="round">
       <img>
         <%= link_to logo, root_path %>
       <img>
-    </section>
+    </div>
     <hgroup id="hgroup">
       <h1><span>The Book of Jack</span></h1>
       <h2><span>An entertaining exploration of all things Jack</span></h2>
     </hgroup>
   </header>
 
-  <section class="container-fluid">
+  <div class="container-fluid">
     <div class="row-fluid">
 
-      <div class="span9">
+      <div class="pull-left span9"> <!-- section -->
         <%= yield %>
       </div>
 
-      <section class="list_tag round pull-right span3">
+      <div class="list_tag round pull-right span3"> <!-- section -->
         <ul class="nav nav-list">
           <li class="nav-header">Articles by Tagging</li>
 
@@ -143,12 +146,13 @@
           <li><a href="#">Nature</a></li>
           <li><a href="#">Places</a></li>
         </ul>
-      </section>
+      </div>
 
     </div>
-  </section>
+  </div>
 
   <%= javascript_include_tag "application" %>
 
-</body> 
+</body>
+
 </html>

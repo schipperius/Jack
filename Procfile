@@ -1,2 +1,2 @@
-WebServer:  bundle exec thin start
+Thin:       bundle exec thin start
 Guard:      bundle exec guard start
