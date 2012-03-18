@@ -34,3 +34,19 @@ header img {
 #hgroup span { /* to hide h1 and h2 in the header */
 	display: none;
 }
+
+/*
+	 Twitter Bootstrap Customizations 
+
+==============================================================================*/
+
+/* PAGER */
+
+.pager a {.border-radius(3px);
+}
+
+/* PILLS - Links rendered as pills */
+
+.nav-pills > li > a {
+  .border-radius(3px);
+}

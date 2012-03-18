@@ -1,10 +1,5 @@
-<%= render 'pages/nav' %>
-
-<article id="main" class="yui3-u-1">
-
-	<div class="yui3-u-1"> <!-- first -->
-		
-		<h1>Colophon</h1>
+<article class="row-fluid">
+  <div class="span12">
 		<p class="first"><span class="t">T</span><span class="firstLine">he term colophon</span> is a late latin word referring to the inscriptions appended by a scribe to the end of a written document <sup id="fnref:1.1" class="footnote"><a href="/colophon#fn:1.1">1</a></sup>. These inscriptions often provided information about the document being finished, revised and complete and sometimes details of the scribe like his name was included.</p>
 	<p>This section describes how this site was made, the tools used, and the technologies behind it.</p>
 		<figure>
@@ -15,9 +10,6 @@
 
 		<p>Literary manuscripts like the Prisse Papyrus pictured above <sup id="fnref:1.2" class="footnote"><a href="/colophon#fn:1.2">2</a></sup>, which dates from the Egyptian Middle Kingdom, where our story first began, often included such colophonic inscriptions, so I thought I would do the same, albeit with some embellishments.</p>
 	
-	</div> <!-- end class yui3-u-1 first -->
-
-	<div class="yui3-u-1"> <!-- second -->
 	
 		<p>The concept for the Book of Jack came from me, Mark Schipper <sup id="fnref:1.3" class="footnote"><a href="/colophon#fn:1.3">3</a></sup>, the content was researched, written and rewritten numerous times over the years, and it appears that this book may never really be finished which became the main reason for adding it to the Internet.</p>
 			
@@ -37,15 +29,6 @@
 		<p>Textmate a text editor is used to edit text, and iTerm, a command-line terminal is used to issue commands. The Web browser of choice is Firefox with several add-ons like Firebug, YSlow and the Web Developer Toolbar. I have the Ruby Version Manger installed but I stick with Ruby 1.9.2 and Rails 3.x.x. My version control system is Git and I push my code to GitHub which makes it very easy to deploy my test environment to Heroku.</p>
 		
 		<p>With everything in place, I decided to turn this book into a social networking site, where I could provide some of the background context and users could sign up and add their own content and in so doing, maybe this book will be complete one day after all.</p>
-				
-	</div> <!-- End class yui3-u-1 second -->
-
-	<div class="pagination">
-		<a href="bibli#top" class="prev-page">
-			<<&nbsp;<span class="number">Bibliography</span></a>
-		<a href="back#top" class="next-page">
-		    <span class="number">Back Cover</span>&nbsp;>></a>
-	</div> <!-- end class pagination -->
 
 	<aside id="cont" class="footnotes">
 		<div class="demo other">			
@@ -62,4 +45,21 @@
 			</ol>
 		</div> 
 	</aside> <!-- end class footnotes -->
+	
+  <section class="row-fluid"> <!-- section -->
+    <div class="span12">
+      <h3>Footnotes</h3>
+    </div>
+  </section>
+
+  <section class="row-fluid"> <!-- section -->
+    <div class="span12">
+      <ul class="pager pull-right">
+        <li><a href="#">Previous</a></li>
+        <li><a href="#">Next</a></li>
+        <li><a href="#">Top</a></li>
+      </ul>
+    </div>
+  </section>
+
 </article>

@@ -1,13 +1,10 @@
 Jack::Application.routes.draw do
 
-  root :to => 'pages#author'
+  root :to => 'pages#about'
 
   # routes for the static pages
-  match '/forward',    :to => 'pages#forward'
-  match '/preface',    :to => 'pages#preface'
-  match '/author',     :to => 'pages#author'
-  match '/bibli',      :to => 'pages#bibli'
-  match '/colophon',   :to => 'pages#colophon'
+  match '/about',    :to => 'pages#about'
+ 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
