@@ -35,18 +35,15 @@ header img {
 	display: none;
 }
 
+/* the last section of an article is given a class of .last to provide a hook to give space between the article and the footnotes */
+.last {
+	margin-bottom: 2em;
+}
+
+
 /*
-	 Twitter Bootstrap Customizations 
+	 Twitter Bootstrap Customizations
+	 in CSS
 
 ==============================================================================*/
 
-/* PAGER */
-
-.pager a {.border-radius(3px);
-}
-
-/* PILLS - Links rendered as pills */
-
-.nav-pills > li > a {
-  .border-radius(3px);
-}

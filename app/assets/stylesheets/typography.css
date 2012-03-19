@@ -2,13 +2,26 @@
 		Typography
 	   ========================================================================== */
 
-/* First letter of first paragraph */
+/* First letter of introduction */
 .first { 
 	text-indent: 0;
 	margin: .5% .5% 2% .5%;
 	padding: .5% .5% 2% .5%;
 }
 
+/* First line of introduction */
+.firstLine {
+	font-variant: small-caps;
+	font-weight: bold;
+	letter-spacing: .13em;
+}
+
+/* Last part of introduction */
+.small {
+	font-size: 15px;
+}
+
+/* First letter of Introduction is an image */
 .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m, .n,
 .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
 	width: 83px;
@@ -18,7 +31,7 @@
 	text-indent: -9999px;
 	background-repeat: no-repeat;
 	background-position: top left;
-	margin: 0em 0em 0em 0em;
+	margin: 0em 0em -1em 0em;
 	}
 
 .a { background: url("letters/letter_a.png"); }
@@ -47,10 +60,3 @@
 .x { background: url("letters/letter_x.png"); }
 .y { background: url("letters/letter_y.png"); }
 .z { background: url("letters/letter_z.png"); }
-
-/* First line of introductory paragraph */
-.firstLine {
-	font-variant: small-caps;
-	font-weight: bold;
-	letter-spacing: .13em;
-}

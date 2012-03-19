@@ -1,39 +1,39 @@
-<header>
+<nav role="navigation" class="tabbable">
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#forward" data-toggle="tab">Forward</a></li>
+    <li><a href="#preface" data-toggle="tab">Preface</a></li>
+    <li><a href="#author" data-toggle="tab">Author</a></li>
+    <li><a href="#bibli" data-toggle="tab">Bibli</a></li>
+    <li><a href="#colophon" data-toggle="tab">Colophon</a></li>
+  </ul>
+</nav>
 
-  <nav role="navigation" class="tabbable">
+<div class="tab-content">
+  <div class="tab-pane active" id="forward">
+    <%= render 'pages/forward' %>
+  </div>
+  <div class="tab-pane" id="preface">
+    <%= render 'pages/preface' %>
+  </div>
+  <div class="tab-pane" id="author">
+    <%= render 'pages/author' %>
+  </div>
+  <div class="tab-pane" id="bibli">
+    <%= render 'pages/bibli' %>
+  </div>
+  <div class="tab-pane" id="colophon">
+    <%= render 'pages/colophon' %>
+  </div>
+</div>
 
-    <ul class="nav nav-pills">
-      <li class="active"><a href="#1" data-toggle="tab">Forward</a></li>
-      <li><a href="#2" data-toggle="tab">Preface</a></li>
-      <li><a href="#3" data-toggle="tab">Author</a></li>
-      <li><a href="#4" data-toggle="tab">Bibli</a></li>
-      <li><a href="#5" data-toggle="tab">Colophon</a></li>
-    </ul>
-
-    <div class="tab-content">
-
-      <div class="tab-pane active" id="1">
-        <%= render 'pages/forward' %>
-      </div>
-
-      <div class="tab-pane" id="2">
-        <%= render 'pages/preface' %>
-      </div>
-
-      <div class="tab-pane" id="3">
-        <%= render 'pages/author' %>
-      </div>
-
-      <div class="tab-pane" id="4">
-        <%= render 'pages/bibli' %>
-      </div>
-
-      <div class="tab-pane" id="5">
-        <%= render 'pages/colophon' %>
-      </div>
-
-    </div>
-
-  </nav>
-
-</header>
+<div role="navigation" class="pagination">
+  <ul class="pull-right">
+    <li class="active">
+      <a href="#forward" data-toggle="tab">1</a>
+    </li>
+    <li><a href="#preface" data-toggle="tab">2</a></li>
+    <li><a href="#author" data-toggle="tab">3</a></li>
+    <li><a href="#bibli" data-toggle="tab">4</a></li>
+    <li><a href="#colophon" data-toggle="tab">5</a></li>
+  </ul>
+</div>

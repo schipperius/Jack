@@ -108,3 +108,19 @@ $gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth 
 // Fluid grid
 $fluidGridColumnWidth:    6.382978723% !default;
 $fluidGridGutterWidth:    2.127659574% !default;
+
+
+
+// CUSTOMIZATIONS
+// ---------------------------------------------------------
+
+// Page Footer
+
+.page-footer {
+  padding-top: $baseLineHeight - 1;
+  margin: $baseLineHeight 0;
+  border-top: 1px solid $grayLighter;
+}
+
+$navbarBackground:                #330000;
+$navbarBackgroundHighlight:       #660000;
