@@ -6,7 +6,7 @@
   <%= render 'layouts/head' %>
 </head>
 
-<body onload="initialize()" id="container" class="container-fluid" data-spy="scroll" data-target=".subnav" data-offset="50">
+<body id="container" class="container-fluid" onload="initialize()">
 
   <nav role="navigation" class="navbar navbar-fixed-top">
     <%= render 'layouts/nav' %>
@@ -35,6 +35,9 @@
   </footer>
 
   <%= javascript_include_tag "application" %>
+
+  <script type="text/javascript"  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAUtjRWrLuGoE4rD4RROzPLdzTg_vgb8VA&sensor=false">
+  </script>
 
 </body>
 

@@ -40,6 +40,17 @@ header img {
 	margin-bottom: 2em;
 }
 
+/* =============================================================================
+		Google Maps
+
+========================================================================== */
+
+div #map_canvas {
+	width: 100%;
+	height: 480px;
+	border: 1px solid #000;
+	margin: 0em;
+}
 
 /*
 	 Twitter Bootstrap Customizations
