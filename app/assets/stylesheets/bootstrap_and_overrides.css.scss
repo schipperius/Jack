@@ -2,10 +2,9 @@
 $iconSpritePath: image-path('glyphicons-halflings.png');
 $iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
 
-@import "bootstrap";
-	body { padding-top: 30px; }
-@import "bootstrap-responsive";
 
+
+// Variables.less
 // Variables to customize the look and feel of Bootstrap
 // -----------------------------------------------------
 
@@ -15,7 +14,7 @@ $iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
 // --------------------------------------------------
 
 // Links
-$linkColor:             #08c !default;
+$linkColor:             #4682b4 !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 // Grays
@@ -69,8 +68,8 @@ $hrBorder:                $grayLighter !default;
 
 // Navbar
 $navbarHeight:                    40px !default;
-$navbarBackground:                $grayDarker !default;
-$navbarBackgroundHighlight:       $grayDark !default;
+$navbarBackground:                #660000 !default;
+$navbarBackgroundHighlight:       #660000 !default;
 $navbarLinkBackgroundHover:       transparent !default;
 
 $navbarText:                      $grayLight !default;
@@ -111,16 +110,11 @@ $fluidGridGutterWidth:    2.127659574% !default;
 
 
 
-// CUSTOMIZATIONS
-// ---------------------------------------------------------
+@import "bootstrap";
 
-// Page Footer
-
-.page-footer {
-  padding-top: $baseLineHeight - 1;
-  margin: $baseLineHeight 0;
-  border-top: 1px solid $grayLighter;
+body {
+	padding-top: 3em;
 }
 
-$navbarBackground:                #330000;
-$navbarBackgroundHighlight:       #660000;
+@import "bootstrap-responsive";
+
