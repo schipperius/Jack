@@ -4,6 +4,7 @@
 ==============================================================================
 		Application Layout
 ============================================================================== */
+@import "bootstrap";
 
 html {
 	height: 100%;
@@ -12,12 +13,7 @@ html {
 body #container { /* body id=container */
 	margin: auto; /* center in viewport */
 	width: 100%; /* fix page width */
-}
-
-.round { /* rounded corners */
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
+	padding-top: 3em;
 }
 
 header img {
@@ -35,6 +31,7 @@ header img {
 	display: none;
 }
 
+
 /* =============================================================================
 		Google Maps
 
@@ -46,9 +43,4 @@ div #map_canvas {
 	margin: 2em 0em;
 }
 
-/*
-	 Twitter Bootstrap Customizations
-	 in CSS
-
-==============================================================================*/
-
+@import "bootstrap-responsive";
