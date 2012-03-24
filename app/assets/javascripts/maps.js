@@ -1,4 +1,3 @@
-
 function initialize() {
 
 // Creating a latitude and longitude for the center of the map
