@@ -27,7 +27,7 @@ header img {
 	display: block;
 }
 
-#logo {
+.logo {
 	margin: 1em;
 }
 
@@ -35,11 +35,10 @@ header img {
 	display: none;
 }
 
-/* the last section of an article is given a class of .last to provide a hook to give space between the article and the footnotes */
-.last {
-	margin-bottom: 2em;
+.330000 {
+	font-color: #330000;
+	font-size: 10em;
 }
-
 /* =============================================================================
 		Google Maps
 

@@ -29,7 +29,7 @@
           </ul>
         </li>
 
-        <li><%= link_to "Browse Articles" %></li>
+        <li><%= link_to "Browse Articles", about_path %></li>
 
         <form class="navbar-search pull-left">
         <input type="text" class="search-query" placeholder="Search Articles">
@@ -43,12 +43,12 @@
             <b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><%= link_to "Photos" %></li>
+            <li><%= link_to "Photos", galleries_path %></li>
             <li><%= link_to "Videos" %></li>
             <li><%= link_to "Music" %></li>
           </ul>
         </li>
-        <li><%= link_to "Cartography", map_path %></li>
+        <li><%= link_to "Cartography", maps_path %></li>
       </ul>
 
       <ul class="nav pull-right">

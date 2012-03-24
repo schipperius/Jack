@@ -14,7 +14,7 @@ $iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
 // --------------------------------------------------
 
 // Links
-$linkColor:             #4682b4 !default;
+$linkColor:             #4682B4 !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 // Grays
@@ -116,5 +116,19 @@ body {
 	padding-top: 3em;
 }
 
-@import "bootstrap-responsive";
+/* add space between last section of article and the footer */
+.page-footer {
+  padding-top: $baseLineHeight - 1;
+  margin: $baseLineHeight 0;
+  border-top: 1px solid $grayLighter;
+}
 
+/* hero unit */
+.hero-unit {
+  background-color: #660000;
+  @include border-radius(10px);
+}
+
+
+
+@import "bootstrap-responsive";

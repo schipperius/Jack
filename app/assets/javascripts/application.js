@@ -11,6 +11,6 @@
 //= require jquery_ujs
 //
 //= require bootstrap
-//= require map
+//= require maps
 //
 //= require_tree .
