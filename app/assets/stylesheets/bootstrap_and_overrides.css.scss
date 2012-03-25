@@ -108,12 +108,22 @@ $gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth 
 $fluidGridColumnWidth:    6.382978723% !default;
 $fluidGridGutterWidth:    2.127659574% !default;
 
+
+
+//
 // -------------------------------------------------------------
 //
+
 @import "bootstrap";
 
+
+
+// CUSTOM STYLES
+// --------------------------------------------------------------
+
+// give some padding to the top of the page
 body {
-	padding-top: 3em;
+	padding-top: 5em;
 }
 
 /* add space between last section of article and the footer */
@@ -123,4 +133,14 @@ body {
   border-top: 1px solid $grayLighter;
 }
 
+.article {
+	margin-top: 0em;
+}
+
+
 @import "bootstrap-responsive";
+
+
+
+// END
+// ---------------------------------------------------------------------------

@@ -1,11 +1,11 @@
 Jack::Application.routes.draw do
 
-  root :to => 'pages#about'
-
-  # routes for the static pages
+  root                  :to => 'pages#about'
+  
   match '/about',       :to => 'pages#about'
-  match '/maps',         :to => 'maps#maps'
-  match '/galleries',         :to => 'galleries#galleries'
+  match '/galleries',   :to => 'galleries#galleries'
+  match '/maps',        :to => 'maps#maps'
+  match '/integrate',   :to => 'maps#integrate'
 
 
   # The priority is based upon order of creation:

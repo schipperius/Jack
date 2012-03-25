@@ -22,12 +22,28 @@ header img {
 	display: block;
 }
 
-.logo {
-	margin: 1em;
-}
-
 #hgroup span { /* to hide h1 and h2 in the header */
 	display: none;
+}
+
+.logo {
+	margin: 1em 0em;
+}
+
+.main {
+	margin-top: 2em;
+}
+
+
+strong {
+	color: #660000;
+}
+
+.accent {
+	font-size: 1.2em;
+	font-variant: small-caps;
+	letter-spacing: .13em;
+	color: #660000;
 }
 
 
