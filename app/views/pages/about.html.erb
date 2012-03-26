@@ -1,35 +1,39 @@
-<nav role="navigation" class="tabbable">
-  <ul class="nav nav-pills">
-    <li class="active"><a href="#forward" data-toggle="tab">Forward</a></li>
-    <li><a href="#preface" data-toggle="tab">Preface</a></li>
-    <li><a href="#author" data-toggle="tab">Author</a></li>
-    <li><a href="#bibli" data-toggle="tab">Bibli</a></li>
-    <li><a href="#colophon" data-toggle="tab">Colophon</a></li>
-  </ul>
+<nav class="page-header">
+  <h1 class="about">About <small>
+  <a href="#forward" data-toggle="tab" class="active">Forward</a> | 
+  <a href="#preface" data-toggle="tab">Preface</a> | 
+  <a href="#author" data-toggle="tab">Author</a> |
+  <a href="#bibli" data-toggle="tab">Bibli</a> |
+  <a href="#colophon" data-toggle="tab">Colophon</a>
+  </small></h1>
 </nav>
 
 <div class="tab-content">
+
   <div class="tab-pane active" id="forward">
     <%= render 'pages/forward' %>
   </div>
+
   <div class="tab-pane" id="preface">
     <%= render 'pages/preface' %>
   </div>
+
   <div class="tab-pane" id="author">
     <%= render 'pages/author' %>
   </div>
+
   <div class="tab-pane" id="bibli">
     <%= render 'pages/bibli' %>
   </div>
+
   <div class="tab-pane" id="colophon">
     <%= render 'pages/colophon' %>
   </div>
+
 </div>
 
-<div role="navigation" class="pagination pull-right span4">
+<div role="navigation" class="pagination pull-right">
   <ul>
-    <li><a href="#">Previous</a></li>
     <li><a href="#">Top of Page</a></li>
-    <li><a href="#">Next</a></li>
   </ul>
 </div>

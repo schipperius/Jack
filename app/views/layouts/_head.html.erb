@@ -1,25 +1,31 @@
-<title><%= title %></title>
+<head>
 
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
-<![endif]-->
+  <meta charset="utf-8">
 
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
-<![endif]-->
+  <title><%= title %></title>
 
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en">
-<![endif]-->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <meta name="description" content="The Book of Jack - an entertaining exploration of the name jack, its usage and origin as well as the sound dzh.">
+  <meta name="author" content="Mark Schipper">
 
-<!--[if gt IE 8]> <!-->
-<!--<![endif]-->
+  <%= stylesheet_link_tag    "application", :media => "all" %>
 
-<!--[if lt IE 9]> <script
-  src="http://html5shim.googlecode.com/svn/trunk/html5.js"
-  type="text/javascript"></script>
+  <%= csrf_meta_tags %>
+
+  <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
   <![endif]-->
 
-<%= stylesheet_link_tag    "application", :media => "all" %>
+  <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
+  <![endif]-->
 
-<%= csrf_meta_tags %>
+  <!--[if IE 8]> <html class="no-js lt-ie9" lang="en">
+  <![endif]-->
 
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-<meta name="description" content="The Book of Jack - an entertaining exploration of the name jack, its usage and origin as well as the sound dzh.">
+  <!--[if gt IE 8]> <!-->
+  <!--<![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>

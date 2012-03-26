@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-<head>
   <%= render 'layouts/head' %>
-</head>
 
-<body id="container" class="container-fluid" onload="initialize()">
+<body id="container" class="container-fluid" onload="initialize()" data-spy="scroll" data-target=".subnav" data-offset="50">
 
-  <nav role="navigation" class="navbar navbar-fixed-top">
     <%= render 'layouts/nav' %>
-  </nav>
 
-  <header role="banner" id="header" class="row-fluid">
     <%= render 'layouts/header' %>
-  </header>
 
-  <section role="main" class="container-fluid main">
-    <div class="row-fluid">
+    <section role="main" class="container-fluid main">
+      <div class="row-fluid">
 
-      <section class="span9 columns">
-        <%= yield %>
-      </section>
+        <section class="span9 columns">
+          <%= yield %>
+        </section>
 
-      <aside role= "complementary" class="span3 columns">
         <%= render 'layouts/aside' %>
-      </aside>
 
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <footer role="contentinfo" class="footer navbar navbar-fixed-bottom">
     <%= render 'layouts/footer' %>
-  </footer>
 
-  <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application" %>
 
-  <script type="text/javascript"  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAUtjRWrLuGoE4rD4RROzPLdzTg_vgb8VA&amp;sensor=false">
-  </script>
+    <script type="text/javascript"  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAUtjRWrLuGoE4rD4RROzPLdzTg_vgb8VA&amp;sensor=false">
+    </script>
 
 </body>
 
