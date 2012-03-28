@@ -1,11 +1,12 @@
 Jack::Application.routes.draw do
 
-  root                  :to => 'pages#about'
+  root                  :to => 'about#about'
   
-  match '/about',       :to => 'pages#about'
-  match '/galleries',   :to => 'galleries#galleries'
-  match '/maps',        :to => 'maps#maps'
-  match '/integrate',   :to => 'maps#integrate'
+  match '/about',       :to => 'about#about'
+
+  match '/galleries',   :to => 'augment#galleries'
+  match '/maps',        :to => 'augment#maps'
+  match '/integrate',   :to => 'augment#integrate'
 
 
   # The priority is based upon order of creation:
