@@ -12,19 +12,21 @@ group :assets do
   gem "compass-rails", "~> 1.0.1"
 end
 
-group :development do
+group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.9.0'
-  gem "guard", "~> 1.0.1"
+  gem 'guard-rspec', '0.5.5'
   gem "guard-livereload", "~> 0.4.2"
   gem "foreman", "~> 0.40.0"
-  gem "growl", "~> 1.0.3"
 end
 
 group :test do
-  gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails', '2.9.0'
   gem 'capybara', '1.1.2'
+  gem 'rb-fsevent', '0.4.3.1', :require => false
+  gem "growl", "~> 1.0.3"
+  gem 'ruby_gntp'
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '0.9.0'
 end
 
 group :production do

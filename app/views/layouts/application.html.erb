@@ -2,32 +2,32 @@
 
 <html lang="en">
 
-  <%= render 'layouts/head' %>
+<%= render 'layouts/head' %>
 
 <body id="container" class="container-fluid" onload="initialize()" data-spy="scroll" data-target=".subnav" data-offset="50">
 
-    <%= render 'layouts/nav' %>
+  <%= render 'layouts/nav' %>
 
-    <%= render 'layouts/header' %>
+  <%= render 'layouts/header' %>
 
-    <section role="main" class="container-fluid main">
-      <div class="row-fluid">
+  <section role="main" class="container-fluid main">
+    <div class="row-fluid">
 
-        <section class="span9 columns">
-          <%= yield %>
-        </section>
+      <section class="span9 columns">
+        <%= yield %>
+      </section>
 
-        <%= render 'layouts/aside' %>
+      <%= render 'layouts/aside' %>
 
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <%= render 'layouts/footer' %>
+  <%= render 'layouts/footer' %>
 
-    <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "application" %>
 
-    <script type="text/javascript"  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAUtjRWrLuGoE4rD4RROzPLdzTg_vgb8VA&amp;sensor=false">
-    </script>
+  <script type="text/javascript"  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAUtjRWrLuGoE4rD4RROzPLdzTg_vgb8VA&amp;sensor=false">
+  </script>
 
 </body>
 

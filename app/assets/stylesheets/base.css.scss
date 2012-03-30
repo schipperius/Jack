@@ -2,17 +2,16 @@
 		Copyright (c) 2010. Schipperius. All rights reserved.
 
 ==============================================================================
-		Application Layout
+		Base Layout 
+		- after defaults from Compass and Bootstrap have been added
 ============================================================================== */
 
 html {
 	height: 100%;
 }
 
-body #container { /* body id=container */
-	margin: auto; /* center in viewport */
-	width: 100%; /* fix page width */
-	padding-top: 3em;
+body {
+	margin-top: 4em;
 }
 
 header img {
@@ -47,11 +46,6 @@ strong {
 }
 
 
-// give some padding to the top of the page
-body {
-	padding-top: 5em;
-}
-
 /* add space between last section of article and the footer */
 .page-footer {
   padding-top: $baseLineHeight - 1;
@@ -66,7 +60,6 @@ body {
 .article {
 	margin-top: 1.4em;
 }
-
 
 
 /* =============================================================================
