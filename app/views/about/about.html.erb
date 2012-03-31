@@ -1,33 +1,38 @@
 <nav class="page-header">
   <h1 class="about">About <small>
-  <a href="#forward" data-toggle="tab" class="active">Forward</a> | 
+  <a href="#toc" data-toggle="tab">Contents</a> |
   <a href="#preface" data-toggle="tab">Preface</a> | 
+  <a href="#forward" data-toggle="tab" class="active">Forward</a> | 
   <a href="#author" data-toggle="tab">Author</a> |
-  <a href="#bibli" data-toggle="tab">Bibli</a> |
-  <a href="#colophon" data-toggle="tab">Colophon</a>
+  <a href="#colophon" data-toggle="tab">Colophon</a> |
+  <a href="#bibli" data-toggle="tab">Bibliography</a>
   </small></h1>
 </nav>
 
 <div class="tab-content">
 
-  <div class="tab-pane active" id="forward">
-    <%= render 'about/forward' %>
+  <div class="tab-pane" id="toc">
+    <%= render 'about/toc' %>
   </div>
 
   <div class="tab-pane" id="preface">
     <%= render 'about/preface' %>
   </div>
 
+  <div class="tab-pane active" id="forward">
+    <%= render 'about/forward' %>
+  </div>
+
   <div class="tab-pane" id="author">
     <%= render 'about/author' %>
   </div>
 
-  <div class="tab-pane" id="bibli">
-    <%= render 'about/bibli' %>
-  </div>
-
   <div class="tab-pane" id="colophon">
     <%= render 'about/colophon' %>
+  </div>
+
+  <div class="tab-pane" id="bibli">
+    <%= render 'about/bibli' %>
   </div>
 
 </div>

@@ -11,7 +11,7 @@
 }
 
 
-figure {
+.figure {
 	float: left;
 	overflow: hidden;
 	margin: 1em;
@@ -20,32 +20,32 @@ figure {
 	border-bottom: 1px dashed #000;
 }
 
-figure img {
+.figure img {
 	width: 100%;
 }
 
-figure p {
+.figure p {
 	text-indent: 20px;
 }
 
-figure .credit {
+.figure .credit {
 	font-size: .7em;
 	text-align: left;
 	width: auto;
 	margin-top: 3px;
 }
 
-figure .credit cite {
+.figure .credit cite {
 	font-style: inherit;
 }
 
-figure .title {
+.figure .title {
 	font-style: normal;
 	font-size: .9em;
 	font-weight: bold;
 }
 
-figure .caption {
+.figure .caption {
 	text-align: left;
 	font-style: italic;
 	font-size: .9em;
@@ -54,6 +54,6 @@ figure .caption {
 	margin-bottom: 5px;	
 }
 
-figure .title:after {
+.figure .title:after {
 	content: ":";
 }

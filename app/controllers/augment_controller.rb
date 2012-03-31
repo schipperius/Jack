@@ -1,6 +1,6 @@
 class AugmentController < ApplicationController
 
-  layout "augment"
+  layout "no_logo_aside"
 
   def maps
     @title = "Maps"
