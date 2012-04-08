@@ -11,7 +11,8 @@ module ApplicationHelper
   end
 
   def logo
-    image_tag("title.png", :alt => "Book of Jack")
+    image_tag("title.png", 
+    :alt => "Book of Jack")
   end
 
 end

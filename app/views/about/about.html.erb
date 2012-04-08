@@ -1,15 +1,23 @@
-<nav class="page-header">
-  <h1 class="about">About <small>
-  <a href="#toc" data-toggle="tab">Contents</a> |
-  <a href="#preface" data-toggle="tab">Preface</a> | 
-  <a href="#forward" data-toggle="tab" class="active">Forward</a> | 
-  <a href="#author" data-toggle="tab">Author</a> |
-  <a href="#colophon" data-toggle="tab">Colophon</a> |
-  <a href="#bibli" data-toggle="tab">Bibliography</a>
-  </small></h1>
+<nav role="navigation" class="page-header">
+  <h1 class="about">About</h1>
+  <ul class="nav nav-pills about-nav">
+    <li class="<%= 'active' if params[:controller] == 'about#toc' %>">
+      <a href="#toc" data-toggle="tab">Contents</a></li>
+    <li class="<%= 'active' if params[:controller] == 'about#preface' %>">
+      <a href="#preface" data-toggle="tab">Preface</a></li>
+    <li class="<%= 'active' if params[:controller] == 'about' %>">
+      <a href="#forward" data-toggle="tab" class="active">Forward</a></li>
+    <li class="<%= 'active' if params[:controller] == 'about#author' %>">
+      <a href="#author" data-toggle="tab">Author</a></li>
+    <li class="<%= 'active' if params[:controller] == 'about#colophon' %>">
+      <a href="#colophon" data-toggle="tab">Colophon</a></li>
+    <li class="<%= 'active' if params[:controller] == 'about#bibli' %>">
+      <a href="#bibli" data-toggle="tab">Bibliography</a></li>
+  </ul>
 </nav>
 
-<div class="tab-content">
+
+<div role="contentinfo" class="tab-content">
 
   <div class="tab-pane" id="toc">
     <%= render 'about/toc' %>

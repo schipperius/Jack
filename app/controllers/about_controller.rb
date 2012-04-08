@@ -1,6 +1,6 @@
 class AboutController < ApplicationController
 
-  layout "no_aside"
+  layout "about"
 
   def about
     @title = "About"
