@@ -14,4 +14,8 @@ class AugmentController < ApplicationController
     @title = "Integrate"
   end
 
+  def copyright
+    @title = "Copyright"
+  end
+
 end

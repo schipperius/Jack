@@ -7,6 +7,7 @@ Jack::Application.routes.draw do
   match '/galleries',   :to => 'augment#galleries'
   match '/maps',        :to => 'augment#maps'
   match '/integrate',   :to => 'augment#integrate'
+  match '/copyright',   :to => 'augment#copyright'
 
 
   # The priority is based upon order of creation:
