@@ -14,6 +14,5 @@
 //
 //= require bootstrap
 //= require maps
-//= require accordion
-//= require acc
+//
 //= require_tree .
