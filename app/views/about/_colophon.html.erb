@@ -2,34 +2,46 @@
 <div class="span12 columns">
 
   <header class="row-fluid page-header">
-    <h1 class="first"><span class="t">T</span><small><span class="firstLine">he colophon is a brief description of the 'making of' a book.</span><span class="small"><sup id="fnref:1.1" class="footnote"><a href="/about#fn:1.1">[1]</a></sup> The making of <em>this</em> book has been far from brief; it involved not only the research and writing of the content, but also the design and development of this website.<sup id="fnref:1.2" class="footnote"><a href="/about#fn:1.2">[2]</a></sup><sup id="fnref:1.3" class="footnote"><a href="/about#fn:1.3">[3]</a></sup></span></small>
+    <h1 class="first"><span class="t">T</span><small><span class="firstLine">he colophon is a brief description of the 'making of' a book.</span><span class="small"><sup id="fnref:1.1" class="footnote"><a href="/about#fn:1.1">[1]</a></sup> The making of <em>this</em> book has been far from brief; it involved not only the research and writing of the content, but also the design and development of this website.</span></small>
     </h1>
   </header>
 
   <section class="row-fluid">
-    <div class="span12 columns">
-      <p>The research and writing of this book...<sup id="fnref:1.4" class="footnote"><a href="/about#fn:1.4">[4]</a></sup></p>
-    </div>
-
-    <div class="span12 columns">
-      <p>Learning to build a website required a lot of reading. (I will add some Amazon widgets, but not today, sigh.) <%# The following books helped me along the Way. %> <sup id="fnref:1.5" class="footnote"><a href="/about#fn:1.5">[5]</a></sup></p>
-    </div>
-  </section>
-
-  <section class="row-fluid">
-    <div class="span12 tabbable">
-
-      <ul class="nav nav-pills">
-        <li><a href="#1" data-toggle="tab"><%= image_tag("flags/canada.png", :alt => "Canada", :title => "Canada") %></a></li>
-        <li><a href="#2" data-toggle="tab"><%= image_tag("flags/us.png", :alt => "United States", :title => "United States") %></a></li>
-        <li><a href="#3" data-toggle="tab"><%= image_tag("flags/uk.png", :alt => "United Kingdom", :title => "United Kingdom") %></a></li>
-        <li><a href="#4" data-toggle="tab"><%= image_tag("flags/germany.png", :alt => "Germany", :title => "Deutschland") %></a></li>
-        <li><a href="#5" data-toggle="tab"><%= image_tag("flags/france.png", :alt => "France", :title => "Française") %></a></li>
-        <li><a href="#6" data-toggle="tab"><%= image_tag("flags/italy.png", :alt => "Italy", :title => "Italia") %></a></li>
+    <div class="span4 columns">
+      <p>Setting up my work environment required the installation of a number of, what I refer to, as primary development tools:
+      <ul>
+        <li><a href="http://www.apple.com/macosx/what-is/" title="Mac OS X" target="_blank">OS X Lion</a> 10.7.3 is Apple's desktop operating system for Macintosh computers<sup id="fnref:1.2" class="footnote"><a href="/about#fn:1.2">[2]</a></sup></li>
+        <li>Google <a href="https://www.google.com/chrome" title="Google Chrome" target="_blank">Chrome</a> is currently the best web browser on the Internet</li>
+        <li><a href="http://mxcl.github.com/homebrew/" title="Homebrew" target="_blank">Homebrew</a> is a package management system that is the easiest and most flexible way to install the UNIX tools Apple didn’t include with OS X.</li>
+        <li><a href="https://developer.apple.com/xcode/" title="Apple Xcode" target="_blank">xCode</a> is Apple's powerful integrated development environment for creating great apps for Mac, iPhone, and iPad</li>
+        <li><a href="http://www.iterm2.com/#/section/home" title="iTerm2" target="_blank">iterm2</a> is a replacement for Terminal, the command line interface for Mac OS X</li>
+        <li><a href="http://en.wikipedia.org/wiki/Z_shell" title="Z Shell" target="_blank">Zsh</a> is a Unix shell that can be used as an interactive login shell and as a powerful command interpreter for shell scripting.</li>
+        <li><a href="http://en.wikipedia.org/wiki/Wget" title="Wget" target="_blank">Wget</a> is a computer program that retrieves content from web servers</li>
+        <li><a href="https://github.com/robbyrussell/oh-my-zsh" title="Oh-my-zsh" target="_blank">Oh-my-zsh</a> is a community-driven framework for managing your zsh configuration</li>
+        <li><a href="http://www.postgresql.org/" title="PostgreSQL" target="_blank">PostgreSQL</a> is an object-relational database management system used to store the data created by this website</li>
+        <li><a href="http://macromates.com/" title="Textmate" target="_blank">Textmate</a> is a general-purpose text editor used to create the documents used in the making of this website</li>
+        <li><a href="http://growl.info/" title="Growl" target="_blank">Growl</a> is a global notification system used to send notifications about recent changes to applications</li>
+        <li><a href="http://git-scm.com/" title="Git" target="_blank">Git</a> is a distributed version control system used to manage changes made to documents</li>
+        <li><a href="https://github.com/" title="Github" target="_blank">Github</a> is a web-based hosting service for software development projects that uses the Git revision control system</li>
+        <li><a href="http://www.heroku.com/" title="Heroku" target="_blank">Heroku</a> is a cloud application platform used to host this website in production</li>
       </ul>
+      <p>With the above tools installed correctly, I am now able to begin building a website.</p>
+    </div>
 
-<%# TODO - build Amazon widgets for the books used %>
+    <div class="span4 columns">
+      <p>The Book of Jack is built with Ruby on Rails and before I could begin, I had to create the Ruby environment by installing the following tools.</p>
+      <ul>
+        <li>RVM</li>
+        <li>Ruby</li>
+        <li>Rubygems</li>
+        <li>Rails</li>
+      </ul>
+    </div>
 
+    <div class="span4 columns">
+      <p>Next up is to initiate a new rails app and set up the rails environment by installing specific rubygems, which I may discuss in a future article.</p>
+      
+      <p>I have not yet begun the deployment process which will require an additional article.</p>
     </div>
   </section>
 
@@ -39,9 +51,8 @@
         <li id="fn:1.1">In early printed books the
         <a href="http://en.wikipedia.org/wiki/Colophon_%28publishing%29" target="_blank" title="Colophon">colophon</a>, when present, was a brief description of the printing and publication of the book. <a href="/about#fnref:1.1" class="arrow">[<i class="icon-arrow-up"></i>]</a></li>
 
-        <li id="fn:1.3">This is my <a href="http://en.wikipedia.org/wiki/Bookcase" title="Bookshelf">bookshelf</a>, a sort of <a href="http://en.wikipedia.org/wiki/Bibliography" title="Bibliography">bibliography</a> of the best books I read to learn web design and development. If you choose to click through to Amazon and purchase one of the recommended titles, I will receive a small referral fee which will help offset the cost of hosting this site. Your support is greatly appreciated, Thank you.<a href="/about#bibli" title="Bibli"></a> <a href="/about#fnref:1.3" class="arrow">[<i class="icon-arrow-up"></i>]</a></li>
-
-        <li id="fn:1.4">Books were not my only means of learning, the following online resources have been indispensable ... <a href="/about#fnref:1.4" class="arrow">[<i class="icon-arrow-up"></i>]</a></li>
+        <li id="fn:1.2">I developed the Book of Jack on an
+        <a href="http://www.apple.com/imac/" target="_blank" title="iMac">iMac</a>, 24-inch early 2009 model. <a href="/about#fnref:1.2" class="arrow">[<i class="icon-arrow-up"></i>]</a></li>
       </ol>
     </div>
   </footer>
