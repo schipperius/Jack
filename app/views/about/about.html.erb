@@ -1,9 +1,6 @@
 <nav role="navigation" class="page-header">
   <h1 class="about">About</h1>
   <ul class="nav nav-pills about-nav">
-    <li class="<%= 'active' if params[:controller] == 'about#colophon' %>">
-      <a href="#colophon" data-toggle="tab">Colophon</a>
-    </li>
     <li class="<%= 'active' if params[:controller] == 'about#toc' %>">
       <a href="#toc" data-toggle="tab">Content</a>
     </li>
@@ -26,10 +23,6 @@
 </nav>
 
 <div role="contentinfo" class="tab-content">
-
-  <div class="tab-pane" id="colophon">
-    <%= render 'about/colophon' %>
-  </div>
 
   <div class="tab-pane" id="toc">
     <%= render 'about/toc' %>
