@@ -8,12 +8,6 @@
         <span class="icon-bar"></span>
       </a>
 
-      <div class="pull-right">
-        <ul class="nav nav-pills">
-          <li><%= link_to "Sign In" %></li>
-        </ul>
-      </div>
-
       <%= link_to "Book of Jack", about_path, :class => "brand" %>
 
       <div class="nav-collapse">
@@ -31,9 +25,9 @@
               <li><a href="#">Introduction</a></li>
               <li class="divider"></li>
               <li class="nav-header">Body</li>
-              <li><%= link_to "Browse Articles", about_path %></li>
+              <li><%= link_to "Articles", about_path %></li>
               <li><%= link_to "Galleries", galleries_path %></li>
-              <li><%= link_to "Cartography", maps_path %></li>
+              <li><%= link_to "Maps", maps_path %></li>
               <li class="divider"></li>
               <li class="nav-header">Back Matter</li>
               <li><a href="#">Bibliography</a></li>
@@ -51,7 +45,11 @@
 
         <ul class="nav">
           <li><%= link_to "Galleries", galleries_path %></li>
-          <li><%= link_to "Cartography", maps_path %></li>
+          <li><%= link_to "Maps", maps_path %></li>
+        </ul>
+
+        <ul class="nav pull-right">
+          <li><%= link_to "Sign In", about_path %></li>
         </ul>
 
       </div>
