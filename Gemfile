@@ -35,4 +35,5 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
+  gem "rufus-scheduler", "~> 2.0.16"
 end
