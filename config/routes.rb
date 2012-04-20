@@ -1,5 +1,7 @@
 Jack::Application.routes.draw do
 
+  resources :articles
+
   root                  :to => 'about#about'
   
   match '/about',       :to => 'about#about'
