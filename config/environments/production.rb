@@ -66,6 +66,6 @@ Jack::Application.configure do
   
   # If you don't need to load the Rails environment, you should disable with
   # the following: (this will speed up the deployment to heroku)
-  config.assets.initialize_on_precompile = false
+  # config.assets.initialize_on_precompile = false
   
 end
