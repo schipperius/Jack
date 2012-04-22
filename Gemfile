@@ -20,6 +20,7 @@ group :development, :test do
   gem 'guard-rspec', '0.5.5'
   gem "guard-livereload", "~> 0.4.2"
   gem "foreman", "~> 0.40.0"
+  gem 'guard-cucumber'
 end
 
 group :test do
