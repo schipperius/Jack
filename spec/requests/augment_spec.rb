@@ -17,9 +17,9 @@ describe "Augment" do
   end
 
   describe "maps page" do
-    it "should have the content 'Cartography'" do
+    it "should have the content 'Maps'" do
       visit '/maps'
-      page.should have_content('Cartography')
+      page.should have_content('Maps')
     end
   end
 

@@ -203,7 +203,7 @@ DEPENDENCIES
   capybara (= 1.1.2)
   coffee-rails (= 3.2.2)
   compass-rails (~> 1.0.1)
-  cucumber-rails
+  cucumber-rails (~> 1.0)
   database_cleaner
   foreman (~> 0.40.0)
   growl (~> 1.0.3)

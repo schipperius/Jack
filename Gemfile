@@ -30,7 +30,7 @@ group :test do
   gem "growl", "~> 1.0.3"
   gem 'ruby_gntp'
   gem 'spork', '0.9.0'
-  gem 'cucumber-rails'
+  gem "cucumber-rails", "~> 1.0", require: false
 end
 
 group :production do

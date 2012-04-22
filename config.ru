@@ -7,5 +7,4 @@ run Jack::Application
 # To take advantage of Heroku’s realtime logging, you will need to disable
 # this buffering to have log messages sent straight to Heroku’s logging
 # infrastructure.
-# To disable this buffering add this...
-stdout.sync = true
+# To disable this buffering add this stdout.sync = true
