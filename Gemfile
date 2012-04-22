@@ -4,7 +4,6 @@ source 'https://rubygems.org'
   gem 'jquery-rails', '2.0.0'
   gem "thin", "~> 1.3.1"
   gem "heroku", "~> 2.21.2"
-  gem "taps", "~> 0.3.23"
 
 group :assets do
   gem 'sass-rails',   '3.2.4'
@@ -22,6 +21,8 @@ group :development, :test do
   gem "guard-livereload", "~> 0.4.2"
   gem "foreman", "~> 0.40.0"
   gem 'guard-cucumber'
+  gem "taps", "~> 0.3.23"
+  gem "rufus-scheduler", "~> 2.0.16"
 end
 
 group :test do
@@ -37,5 +38,4 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
-  gem "rufus-scheduler", "~> 2.0.16"
 end
