@@ -4,11 +4,15 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
 
+
+
 # Logs and databases #
 ######################
 *.log
 *.sql
 *.sqlite
+
+
 
 # Ruby generated files #
 ########################
@@ -31,6 +35,8 @@ tmp
 _yardoc
 doc/
 
+
+
 # Rails generated files #
 #########################
 *.rbc
@@ -50,6 +56,11 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
+
+
 # SASS generated files #
 ########################
 .sass-cache
+
+
+ 
