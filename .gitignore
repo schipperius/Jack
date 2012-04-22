@@ -63,4 +63,8 @@ pickle-email-*.html
 .sass-cache
 
 
- 
+# Heroku generated files #
+##########################
+.env
+
+
