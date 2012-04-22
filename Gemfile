@@ -22,7 +22,6 @@ group :development, :test do
   gem "foreman", "~> 0.40.0"
   gem 'guard-cucumber'
   gem "taps", "~> 0.3.23"
-  gem "rufus-scheduler", "~> 2.0.16"
 end
 
 group :test do
@@ -38,4 +37,5 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
+  gem "rufus-scheduler", "~> 2.0.16"
 end
