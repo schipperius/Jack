@@ -16,6 +16,12 @@
     <div class="row-fluid">
 
       <section role="main" id="main" class="span9 columns">
+        <% flash.each do |key, value| %>
+          <div class='flash' id='<%= key %>'>
+            <%= value %>
+          </div>
+        <% end %>
+
         <%= yield %>
       </section>
 

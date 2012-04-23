@@ -1,0 +1,1 @@
+{"klass":"Taps::Push","database_url":"postgres://Home@127.0.0.1/jack_development?encoding=utf8","remote_url":"http://heroku:osui59a24am79x@taps19.heroku.com","session_uri":"/sessions/749799559","stream_state":{},"completed_tables":["schema_migrations"],"table_filter":null,"local_tables_info":{"schema_migrations":2,"articles":4}}

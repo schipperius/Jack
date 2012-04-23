@@ -28,7 +28,8 @@ group :test do
   gem 'pg', '0.12.2'
   gem 'capybara', '1.1.2'
   gem 'database_cleaner'
-  gem 'rb-fsevent', '0.4.3.1', :require => false
+# gem 'rb-fsevent', '0.4.3.1', :require => false
+# does not seem to work with heroku db:push
   gem "growl", "~> 1.0.3"
   gem 'ruby_gntp'
   gem 'spork', '0.9.0'

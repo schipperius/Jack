@@ -1,20 +1,70 @@
-<p id="notice"><%= notice %></p>
+<article class="row-fluid">
+<div class="span12 columns">
 
-<p>
-  <b>Title:</b>
-  <%= @article.title %>
-</p>
+  <section>
+    <p id="notice"><%= notice %></p>
+    <ul class="nav nav-pills">
+      <li><%= link_to 'Back', articles_path %></li>
+      <li><%= link_to 'Edit', edit_article_path(@article) %></li>
+      <li><%= link_to 'Destroy', @article, 
+      confirm: 'Are you sure?', 
+      method: :delete %> </li>
+    </ul>
+  </section>
 
-<p>
-  <b>Introduction:</b>
-  <%= @article.introduction %>
-</p>
+  <header>
+    <section>
+      <%#= image_tag(@article.image_url, :size => "100x100") %>
+    </section>
 
-<p>
-  <b>Description:</b>
-  <%= @article.description %>
-</p>
+    <section>
+      <p class="article-title">#
+        <%#= @article.position %>
+        <%= @article.title %>
+      </p>
 
+      <p class="article-sub-title">
+        <%#= @article.published_at.strftime('%b %d, %Y') %> |
+        <%= link_to "tag 1", root_url %> |
+        <%= link_to "tag 2", root_url %>
+      </p>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+      <p class="article-intro">
+        <%= @article.introduction %>
+      </p>
+    </section>
+  </header>
+
+  <section id="tabs" class="article-nav">
+    <div class="tabbable">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#1" data-toggle="tab"><%= @article.title %></a></li>
+        <li><a href="#2" data-toggle="tab">Images</a></li>
+        <li><a href="#3" data-toggle="tab">Footnotes</a></li>
+        <li><a href="#4" data-toggle="tab">Comments</a></li>
+        <li><a href="#5" data-toggle="tab">Similar Articles</a></li>
+        <li><a href="#6" data-toggle="tab">Previous Articles</a></li>
+        <li><a href="#7" data-toggle="tab">Next Articles</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="1">
+          <p><%= @article.description %></p>
+        </div>
+        <div class="tab-pane" id="2">
+        </div>
+        <div class="tab-pane" id="3">
+        </div>
+        <div class="tab-pane" id="4">
+        </div>
+        <div class="tab-pane" id="5">
+        </div>
+        <div class="tab-pane" id="6">
+        </div>
+        <div class="tab-pane" id="7">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</div>
+</article>

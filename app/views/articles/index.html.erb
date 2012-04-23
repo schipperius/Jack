@@ -1,27 +1,42 @@
 <article class="row-fluid">
 <div class="span12 columns">
 
-  <section>
+  <section id="admin" class="row-fluid">
     <ul class="nav">
       <li><%= link_to 'New Article', new_article_path %></li>
     </ul>
   </section>
 
-  <section>
+  <section class="article-brief row-fluid">
     <% @articles.each do |article| %>
-
     <header class="row-fluid">
-      <%= article.title %>
+
+      <section class="article-image">
+        <%#= image_tag(article.image_url, :size => "75x75") %>
+      </section>
+
+      <section class="article_text">
+        <p class="article_position">
+          <strong>Article
+            <span>#<%#= article.position %> - </span>
+          </strong>
+          <span><%#= article.published_at.strftime('%b %d, %Y') %></span>
+        </p>
+
+        <p class="article_title">
+          <strong>
+            <span><%= link_to article.title, article%></span>
+          </strong>
+        </p>
+
+        <p class="article_intro">
+          <%= truncate(strip_tags(article.introduction),
+            :length => 500, :separator => ' ') %>..
+          <%= link_to 'read more', article %>
+        </p>
+      </section>
+
     </header>
-
-    <li><%= link_to 'Show', article %></li>
-    <li><%= link_to 'Edit', edit_article_path(article) %></li>
-    <li><%= link_to 'Destroy', article, confirm: 'Are you sure?', method: :delete %></li>
-
-    <section>
-      <%= article.introduction %>
-      <%= article.description %>
-    </section>
     <% end %>
   </section>
 
