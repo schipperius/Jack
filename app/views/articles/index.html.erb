@@ -11,11 +11,19 @@
     <% @articles.each do |article| %>
     <header class="row-fluid">
 
-      <section class="article-image">
-        <%#= image_tag(article.image_url, :size => "75x75") %>
+      <section class="article-image span4 columns pull-right">
+        <div>
+          <ul class="thumbnails">
+            <li>
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/260x180" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="article_text">
+      <section class="article_text span8 pull-right">
         <p class="article_position">
           <strong>Article
             <span>#<%#= article.position %> - </span>
@@ -38,6 +46,10 @@
 
     </header>
     <% end %>
+  </section>
+
+  <section class="article-paginate pull-right">
+    <%= will_paginate :previous_label => h("Previous Article"), :next_label => h("Next Article") %>
   </section>
 
 </div>
