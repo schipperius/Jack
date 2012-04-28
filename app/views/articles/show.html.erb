@@ -34,7 +34,7 @@
       </h3>
 
       <p class="article-sub-title">
-        Date<%#= @article.published_at.strftime('%b %d, %Y') %> |
+        <%= @article.published_at.strftime('%b %d, %Y') %> |
         <%= link_to "tag 1", root_url %> |
         <%= link_to "tag 2", root_url %> |
         <%= link_to "tag 3", root_url %>

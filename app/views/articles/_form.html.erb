@@ -10,19 +10,31 @@
       </ul>
     </div>
   <% end %>
+  <div class="field">
+    <%= f.label :position %><br />
+    <%= f.number_field :position %>
+  </div>
 
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
+
   <div class="field">
     <%= f.label :introduction %><br />
-    <%= f.text_area :introduction %>
+    <%= f.text_area :introduction, :rows => 6, :columns => 20 %>
   </div>
+
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :rows => 6 %>
   </div>
+  
+  <div class="field">
+    <%= f.label :published_at %><br />
+    <%= f.datetime_select :published_at %>
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
