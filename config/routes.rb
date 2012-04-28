@@ -1,10 +1,11 @@
 Jack::Application.routes.draw do
 
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   root                  :to => "articles#index"
 
-# match '/articles',    :to => 'articles#index'
   match '/about',       :to => 'about#about'
 
   match '/galleries',   :to => 'augment#galleries'

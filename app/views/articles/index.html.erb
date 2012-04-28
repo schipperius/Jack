@@ -48,8 +48,8 @@
     <% end %>
   </section>
 
-  <section class="article-paginate pull-right">
-    <%= will_paginate :previous_label => h("Previous Article"), :next_label => h("Next Article") %>
+  <section class="pagination pull-right">
+    <%= will_paginate :previous_label => h("<"), :next_label => h(">") %>
   </section>
 
 </div>

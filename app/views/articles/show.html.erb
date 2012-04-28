@@ -2,9 +2,7 @@
 <div class="span12 columns">
 
   <section>
-    <span id="notice">
-      <%= notice %>
-    </span>
+    <p id="notice"><%= notice %></p>
     <ul class="nav nav-pills">
       <li><%= link_to 'Back', articles_path %></li>
       <li><%= link_to 'Edit', edit_article_path(@article) %></li>
@@ -81,6 +79,7 @@
         </div>
 
         <div class="tab-pane" id="4">
+          <%= render 'comments' %>
         </div>
 
         <div class="tab-pane" id="5">
