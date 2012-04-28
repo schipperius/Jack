@@ -27,7 +27,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'pg', '0.12.2'
   gem 'capybara', '1.1.2'
   gem 'database_cleaner'
 # gem 'rb-fsevent', '0.4.3.1', :require => false
