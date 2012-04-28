@@ -11,7 +11,7 @@
     <% @articles.each do |article| %>
     <header class="row-fluid">
 
-      <section class="article-image span4 columns pull-right">
+      <section class="article-image span4 columns pull-left">
         <div>
           <ul class="thumbnails">
             <li>
@@ -23,21 +23,21 @@
         </div>
       </section>
 
-      <section class="article_text span8 pull-right">
-        <p class="article_position">
+      <section class="article-text span8 pull-right">
+        <h4 class="article-position">
           <strong>Article
-            <span>#<%#= article.position %> - </span>
+            <span>#<%= article.position %> - </span>
           </strong>
-          <span><%#= article.published_at.strftime('%b %d, %Y') %></span>
-        </p>
+          <span><%# article.published_at.strftime('%b %d, %Y') %></span>
+        </h4>
 
-        <p class="article_title">
+        <p class="article-title">
           <strong>
             <span><%= link_to article.title, article%></span>
           </strong>
         </p>
 
-        <p class="article_intro">
+        <p class="article-intro">
           <%= truncate(strip_tags(article.introduction),
             :length => 500, :separator => ' ') %>..
           <%= link_to 'read more', article %>

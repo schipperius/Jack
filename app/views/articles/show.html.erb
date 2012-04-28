@@ -12,21 +12,32 @@
     </ul>
   </section>
 
-  <header>
-    <section>
-      <%#= image_tag(@article.image_url, :size => "100x100") %>
+  <header class="row-fluid">
+    <section class="article-image span4 columns pull-left">
+      <div>
+        <ul class="thumbnails">
+          <li>
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/260x180" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <p class="article-title">#
-        <%#= @article.position %>
-        <%= @article.title %>
-      </p>
+    <section class="article-text span8 pull-right">
+      <h3 class="article-position">
+        <strong>
+          <span>#<%= @article.position %> - </span>
+          <span><%= @article.title %></span>
+        </strong>
+      </h3>
 
       <p class="article-sub-title">
-        <%#= @article.published_at.strftime('%b %d, %Y') %> |
+        Date<%#= @article.published_at.strftime('%b %d, %Y') %> |
         <%= link_to "tag 1", root_url %> |
-        <%= link_to "tag 2", root_url %>
+        <%= link_to "tag 2", root_url %> |
+        <%= link_to "tag 3", root_url %>
       </p>
 
       <p class="article-intro">
@@ -41,10 +52,10 @@
         <li class="active"><a href="#1" data-toggle="tab"><%= @article.title %></a></li>
         <li><a href="#2" data-toggle="tab">Images</a></li>
         <li><a href="#3" data-toggle="tab">Footnotes</a></li>
-        <li><a href="#4" data-toggle="tab">Comments</a></li>
+        <li><a href="#4" data-toggle="tab"># Comments</a></li>
         <li><a href="#5" data-toggle="tab">Similar Articles</a></li>
-        <li><a href="#6" data-toggle="tab">Previous Articles</a></li>
-        <li><a href="#7" data-toggle="tab">Next Articles</a></li>
+        <li><a href="#6" data-toggle="tab">Previous Article</a></li>
+        <li><a href="#7" data-toggle="tab">Next Article</a></li>
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="1">

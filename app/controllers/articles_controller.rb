@@ -1,36 +1,22 @@
 class ArticlesController < ApplicationController
 
   def index
-    @articles = Article.paginate :page => params[:page], :per_page => 3
+    @articles = Article.paginate :page => params[:page], :per_page => 2
   end
 
   def show
     @article = Article.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @article }
-    end
   end
 
-  # GET /articles/new
-  # GET /articles/new.json
   def new
     @article = Article.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @article }
-    end
+    @article.position = Article.maximum(:position).to_i + 1
   end
 
-  # GET /articles/1/edit
   def edit
     @article = Article.find(params[:id])
   end
 
-  # POST /articles
-  # POST /articles.json
   def create
     @article = Article.new(params[:article])
 
@@ -45,8 +31,6 @@ class ArticlesController < ApplicationController
     end
   end
 
-  # PUT /articles/1
-  # PUT /articles/1.json
   def update
     @article = Article.find(params[:id])
 
@@ -61,15 +45,9 @@ class ArticlesController < ApplicationController
     end
   end
 
-  # DELETE /articles/1
-  # DELETE /articles/1.json
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-
-    respond_to do |format|
-      format.html { redirect_to articles_url }
-      format.json { head :no_content }
-    end
   end
+
 end
