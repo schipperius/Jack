@@ -25,17 +25,17 @@
 
       <section class="article-text span8 pull-right">
         <h4 class="article-position">
-          <strong>Article
-            <span>#<%= article.position %> - </span>
+          <strong>
+            Article <span>#<%= article.position %> - </span>
+            <span><%= article.published_at.strftime('%b %d, %Y') %></span>
           </strong>
-          <span><%= article.published_at.strftime('%b %d, %Y') %></span>
         </h4>
 
-        <p class="article-title">
+        <h3 class="article-title">
           <strong>
             <span><%= link_to article.title, article%></span>
           </strong>
-        </p>
+        </h3>
 
         <p class="article-intro">
           <%= truncate(strip_tags(article.introduction),
