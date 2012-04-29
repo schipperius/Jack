@@ -60,10 +60,7 @@
         <li><a href="#3" data-toggle="tab">Footnotes</a></li>
         <li><a href="#4" data-toggle="tab">Comments</a></li>
         <li><a href="#5" data-toggle="tab">Similar Articles</a></li>
-        <li><%= link_to pluralize(@article.comments.size, "comment"),
-         article_path(@article, 
-         :view => "comments"), 
-         :class => "comment_count" %></li>
+        <li><%= link_to pluralize(@article.comments.size, "comment"),       article_path(@article, :view => "comments"), :class => "comment_count" %></li>
       </ul>
 
       <div class="tab-content">
