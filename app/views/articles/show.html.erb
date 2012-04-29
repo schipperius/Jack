@@ -55,11 +55,15 @@
     <div class="tabbable">
 
       <ul class="nav nav-pills">
-        <li class="active"><a href="#1" data-toggle="tab"><%= @article.title %></a></li>
+        <li class="active"><a href="#1" data-toggle="tab">Description</a></li>
         <li><a href="#2" data-toggle="tab">Gallery</a></li>
         <li><a href="#3" data-toggle="tab">Footnotes</a></li>
-        <li><a href="#4" data-toggle="tab"># Comments</a></li>
+        <li><a href="#4" data-toggle="tab">Comments</a></li>
         <li><a href="#5" data-toggle="tab">Similar Articles</a></li>
+        <li><%= link_to pluralize(@article.comments.size, "comment"),
+         article_path(@article, 
+         :view => "comments"), 
+         :class => "comment_count" %></li>
       </ul>
 
       <div class="tab-content">
