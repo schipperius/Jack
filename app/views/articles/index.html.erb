@@ -42,7 +42,7 @@
         </h4>
 
         <h3 class="article-title accent">
-          <%= link_to article.title, article%>
+          <%= link_to article.title, article %>
         </h3>
 
         <p class="article-intro">
@@ -56,9 +56,9 @@
     <% end %>
   </section>
 
-  <section class="pagination pull-right">
+  <footer class="pagination pull-right page-header">
     <%= will_paginate :previous_label => h("<"), :next_label => h(">") %>
-  </section>
+  </footer>
 
 </div>
 </article>

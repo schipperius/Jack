@@ -1,29 +1,52 @@
 <p id="notice"><%= notice %></p>
 
-<div id="show-comments">
+<section class="show-comments row-fluid">
   <% @article.comments.each do |comment| %>
-  <div>
-    <%= comment.name %>
-  </div>
+  <header class="row-fluid page-header">
 
-  <div>
-    <%= comment.content %>
-  </div>
-  <% end %>
-</div>
+    <section class="comment-image span2 columns pull-left">
+      <div>
+        <ul class="thumbnails">
+          <li>
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/260x180" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-<div id="post-comments">
-  <%= form_for([@article, @article.comments.build]) do |f| %>
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content, :rows => '4' %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Post Comment" %>
-  </div>
+    <section class="comment-name span10 pull-right">
+      <div class="comment-name">
+        <h4><%= comment.name %>
+          <span class="comment-date">
+            <%#= comment.date %>2 Days ago
+          </span>
+        </h4>
+      </div>
+
+      <div class="comment-content">
+        <p><%= comment.content %></p>
+      </div>
+    </section>
+  </header>
   <% end %>
-</div>
+</section>
+
+<section>
+  <div id="post-comments">
+    <%= form_for([@article, @article.comments.build]) do |f| %>
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :content %>
+      <%= f.text_area :content, :rows => '4' %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Post Comment" %>
+    </div>
+    <% end %>
+  </div>
+</section>
