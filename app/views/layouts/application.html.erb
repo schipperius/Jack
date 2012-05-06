@@ -2,39 +2,25 @@
 
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
 
-<head>
-  <%= render 'layouts/head' %>
-</head>
+<%= render 'layouts/head' %>
 
 <body id="container" class="container-fluid" onload="initialize()" data-spy="scroll" data-target=".subnav" data-offset="50">
 
-    <%= render 'layouts/nav' %>
+  <%= render 'layouts/nav' %>
 
-    <%= render 'layouts/header' %>
+  <%= render 'layouts/header' %>
 
-  <section class="container-fluid main">
-    <div class="row-fluid">
-
-      <section role="main" id="main" class="span9 columns">
-        <% flash.each do |key, value| %>
-          <div class='flash' id='<%= key %>'>
-            <%= value %>
-          </div>
-        <% end %>
-
-        <%= yield %>
-      </section>
-
-      <section role="complementary" id="side-bar" class="span3 columns">
-        <%= render 'layouts/toc' %>
-      </section>
-
+  <% flash.each do |key, value| %>
+    <div class='flash' id='<%= key %>'>
+      <%= value %>
     </div>
-  </section>
+  <% end %>
 
-    <%= render 'layouts/footer' %>
+  <%= yield %>
 
-    <%= render 'layouts/foot' %>
+  <%= render 'layouts/footer' %>
+
+  <%= render 'layouts/foot' %>
 
 </body>
 

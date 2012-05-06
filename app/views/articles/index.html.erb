@@ -7,7 +7,14 @@
     </ul>
   </section>
 
+  <section role="complementary" id="side-bar">
+    <div class="span3 columns pull-right">
+      <%= render 'layouts/toc' %>
+    </div>
+  </section>
+
   <section class="article-brief row-fluid">
+    <div class="span9 columns pull-left">
 
     <% @articles.each do |article| %>
 
@@ -54,11 +61,13 @@
 
     </header>
     <% end %>
-  </section>
 
-  <footer class="pagination pull-right page-header">
-    <%= will_paginate :previous_label => h("<"), :next_label => h(">") %>
-  </footer>
+    <footer class="pagination pull-right page-header">
+      <%= will_paginate :previous_label => h("<"), :next_label => h(">") %>
+    </footer>
+
+  </div>
+  </section>
 
 </div>
 </article>

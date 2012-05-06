@@ -19,6 +19,7 @@ end
 
 group :development, :test do
   gem 'pg', '0.12.2'
+  gem "taps", "~> 0.3.23"
   gem "factory_girl_rails", "~> 3.2.0"
   gem 'rspec-rails', '~> 2.9.0'
   gem "foreman", "~> 0.40.0"
@@ -26,7 +27,6 @@ group :development, :test do
   gem "guard-livereload", "~> 0.4.2"
   gem 'guard-rspec', '0.5.5'
   gem 'guard-cucumber'
-  gem "taps", "~> 0.3.23"
 end
 
 group :test do
@@ -35,7 +35,7 @@ group :test do
 # gem 'rb-fsevent', '0.4.3.1', :require => false
 # does not seem to work with heroku db:push
   gem "growl", "~> 1.0.3"
-  gem 'ruby_gntp'
+  gem 'ruby_gntp' # needed for Heroku
   gem 'spork', '0.9.0'
   gem "cucumber-rails", "~> 1.0", require: false
 end
@@ -44,4 +44,3 @@ group :production do
   gem 'pg', '0.12.2'
   gem "rufus-scheduler", "~> 2.0.16"
 end
-
