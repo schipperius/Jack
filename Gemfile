@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
   gem 'pg', '0.12.2'
+  gem "faker", "~> 1.0.1"
   gem 'rails', '3.2.2'
   gem 'jquery-rails', '2.0.0'
   gem "will_paginate", "~> 3.0.3"
   gem "bootstrap-will_paginate", "~> 0.0.7"
+  gem "acts-as-taggable-on", "~> 2.2.2"
   gem "thin", "~> 1.3.1"
   gem "heroku", "~> 2.21.2"
 
@@ -17,6 +19,7 @@ end
 
 group :development, :test do
   gem 'pg', '0.12.2'
+  gem "factory_girl_rails", "~> 3.2.0"
   gem 'rspec-rails', '~> 2.9.0'
   gem "foreman", "~> 0.40.0"
   gem 'guard-spork', '0.3.2'
