@@ -18,6 +18,7 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'pg', '0.12.2'
   gem "taps", "~> 0.3.23"
   gem "factory_girl_rails", "~> 3.2.0"
