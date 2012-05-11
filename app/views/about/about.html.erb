@@ -1,57 +1,68 @@
-<nav role="navigation" class="page-header">
-  <h1 class="about">About</h1>
-  <ul class="nav nav-pills about-nav">
-    <li class="<%= 'active' if params[:controller] == 'about#toc' %>">
-      <a href="#toc" data-toggle="tab">Content</a>
-    </li>
-    <li class="<%= 'active' if params[:controller] == 'about#foreword' %>">
-      <a href="#foreword" data-toggle="tab">Foreword</a>
-    </li>
-    <li class="<%= 'active' if params[:controller] == 'about' %>">
-      <a href="#preface" data-toggle="tab" class="active">Preface</a>
-    </li>
-    <li class="<%= 'active' if params[:controller] == 'about#acknowledge' %>">
-      <a href="#acknowledge" data-toggle="tab">Acknowledge</a>
-    </li>
-    <li class="<%= 'active' if params[:controller] == 'about#author' %>">
-      <a href="#author" data-toggle="tab">Author</a>
-    </li>
-    <li class="<%= 'active' if params[:controller] == 'about#intro' %>">
-      <a href="#intro" data-toggle="tab">Introduction</a>
-    </li>
-  </ul>
-</nav>
+<article class="row-fluid">
+  <div class="span12 columns">
 
-<div role="contentinfo" class="tab-content">
+    <nav role="navigation" class="page-header">
+      <h1 class="about">About</h1>
+      <ul class="nav nav-pills about-nav">
+        <li class="<%= 'active' if params[:controller] == 'about#epigrpah' %>">
+          <a href="#epigraph" data-toggle="tab">Epigraph</a>
+        </li>
+        <li class="<%= 'active' if params[:controller] == 'about#toc' %>">
+          <a href="#toc" data-toggle="tab">Content</a>
+        </li>
+        <li class="<%= 'active' if params[:controller] == 'about#foreword' %>">
+          <a href="#foreword" data-toggle="tab">Foreword</a>
+        </li>
+        <li class="<%= 'active' if params[:controller] == 'about' %>">
+          <a href="#preface" data-toggle="tab" class="active">Preface</a>
+        </li>
+        <li class="<%= 'active' if params[:controller] == 'about#acknowledge' %>">
+          <a href="#acknowledge" data-toggle="tab">Acknowledge</a>
+        </li>
+        <li class="<%= 'active' if params[:controller] == 'about#author' %>">
+          <a href="#author" data-toggle="tab">Author</a>
+        </li>
+        <li class="<%= 'active' if params[:controller] == 'about#intro' %>">
+          <a href="#intro" data-toggle="tab">Introduction</a>
+        </li>
+      </ul>
+    </nav>
 
-  <div class="tab-pane" id="toc">
-    <%= render 'about/toc' %>
+    <div role="contentinfo" class="tab-content">
+      <div class="tab-pane" id="epigraph">
+        <%= render 'about/epigraph' %>
+      </div>
+
+      <div class="tab-pane" id="toc">
+        <%= render 'about/toc' %>
+      </div>
+
+      <div class="tab-pane" id="foreword">
+        <%= render 'about/foreword' %>
+      </div>
+
+      <div class="tab-pane active" id="preface">
+        <%= render 'about/preface' %>
+      </div>
+
+      <div class="tab-pane" id="acknowledge">
+        <%= render 'about/acknowledge' %>
+      </div>
+
+      <div class="tab-pane" id="author">
+        <%= render 'about/author' %>
+      </div>
+
+      <div class="tab-pane" id="intro">
+        <%= render 'about/intro' %>
+      </div>
+    </div>
+
+    <div role="navigation" class="pagination pull-right">
+      <ul>
+        <li><a href="#">Top of Page</a></li>
+      </ul>
+    </div>
+
   </div>
-
-  <div class="tab-pane" id="foreword">
-    <%= render 'about/foreword' %>
-  </div>
-
-  <div class="tab-pane active" id="preface">
-    <%= render 'about/preface' %>
-  </div>
-
-  <div class="tab-pane" id="acknowledge">
-    <%= render 'about/acknowledge' %>
-  </div>
-
-  <div class="tab-pane" id="author">
-    <%= render 'about/author' %>
-  </div>
-
-  <div class="tab-pane" id="intro">
-    <%= render 'about/intro' %>
-  </div>
-
-</div>
-
-<div role="navigation" class="pagination pull-right">
-  <ul>
-    <li><a href="#">Top of Page</a></li>
-  </ul>
-</div>
+</article>

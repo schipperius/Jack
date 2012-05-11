@@ -13,6 +13,7 @@ Jack::Application.routes.draw do
   match '/maps',        :to => 'augment#maps'
   match '/integrate',   :to => 'augment#integrate'
   match '/copyright',   :to => 'augment#copyright'
+  match '/epigraph',    :to => 'augment#epigraph'
 
   resources :articles do
     resources :comments
