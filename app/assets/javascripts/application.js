@@ -13,7 +13,6 @@
 //= require jquery_ujs
 //
 //= require bootstrap
-//= require bootstrap-dropdown
 //= require maps
 //
 //= require_tree .
