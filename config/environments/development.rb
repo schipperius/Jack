@@ -34,4 +34,8 @@ Jack::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  # blah
+  config.assets.precompile += %w[ bootstrap*.css bootstrap.js ] 
+  
 end
