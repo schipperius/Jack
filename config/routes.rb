@@ -11,7 +11,6 @@ Jack::Application.routes.draw do
   match '/author',      :to => 'about#author'
   match '/colophon',    :to => 'about#colophon'
   match '/copyright',   :to => 'about#copyright'
-  match '/epigraph',    :to => 'about#epigraph'
   match '/foreword',    :to => 'about#foreword'
   match '/intro',       :to => 'about#intro'
   match '/preface',     :to => 'about#preface'
