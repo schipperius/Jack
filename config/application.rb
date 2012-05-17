@@ -74,7 +74,5 @@ module Jack
     # or methods. Heroku requires this to be false.
       config.assets.initialize_on_precompile = false
 
-    # Precompile Modernizr.js
-      config.assets.precompile += %w( modernizr.js )
   end
 end
