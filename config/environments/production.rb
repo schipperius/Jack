@@ -16,8 +16,9 @@ Jack::Application.configure do
   config.assets.js_compressor  = :uglifier
   config.assets.css_compressor = :scss
 
-  config.assets.compile = false
   config.assets.digest = true
+  
+  config.assets.compile = true
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
