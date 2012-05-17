@@ -60,7 +60,9 @@ module Jack
     # by setting config.assets.initialize_on_precompile to false,
     # though in that case, templates cannot see application objects
     # or methods. Heroku requires this to be false.
-    # config.assets.initialize_on_precompile = false
-    config.assets.precompile += %w( modernizr.js )
+      config.assets.initialize_on_precompile = false
+
+    # Precompile Modernizr.js
+      config.assets.precompile += %w( modernizr.js )
   end
 end
