@@ -1,93 +1,93 @@
 <article class="row-fluid">
-<div class="span12 columns">
+  <div class="span12 columns">
 
-  <section>
-    <p id="notice"><%= notice %></p>
-    <ul class="nav nav-pills">
-      <li><%= link_to 'Back', articles_path %></li>
-      <li><%= link_to 'Edit', edit_article_path(@article) %></li>
-      <li><%= link_to 'Destroy', @article, 
-      confirm: 'Are you sure?', 
-      method: :delete %> </li>
-    </ul>
-  </section>
+    <section>
+      <p id="notice"><%= notice %></p>
+      <ul class="nav nav-pills">
+        <li><%= link_to 'Back', articles_path %></li>
+        <li><%= link_to 'Edit', edit_article_path(@article) %></li>
+        <li><%= link_to 'Destroy', @article, 
+        confirm: 'Are you sure?', 
+        method: :delete %> </li>
+      </ul>
+    </section>
 
-  <header class="row-fluid page-header">
-    <section class="article-image span4 columns pull-left">
-      <div>
-        <ul class="thumbnails">
-          <li>
-            <a href="#" class="thumbnail">
-              <img src="http://placehold.it/360x270" alt="">
-            </a>
-          </li>
+    <header class="row-fluid page-header">
+      <section class="article-image span4 columns pull-left">
+        <div>
+          <ul class="thumbnails">
+            <li>
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/360x270" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="article-text span8 pull-right">
+        <h3 class="article-position">
+          <strong>
+            <span>#<%= @article.position %> - </span>
+            <span><%= @article.title %></span>
+          </strong>
+        </h3>
+
+        <h4 class="article-sub-title">
+          <%= @article.published_at.strftime('%b %d, %Y') %> |
+          <%= link_to "tag 1", root_url %> |
+          <%= link_to "tag 2", root_url %> |
+          <%= link_to "tag 3", root_url %>
+        </h4>
+
+        <br/>
+        <span class="article-intro">
+          <%= @article.introduction %>
+        </span>
+        <ul class="nav nav-pills">
+          <li><%= link_to "<< Previous Article", @article.previous %></li>
+          <li><%= link_to "Next Article >>", @article.next %></li>
         </ul>
+      </section>
+    </header>
+
+    <section id="tabs" class="article-nav page-header">
+      <div class="tabbable">
+
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#1" data-toggle="tab">Description</a></li>
+          <li><a href="#2" data-toggle="tab">Gallery</a></li>
+          <li><a href="#3" data-toggle="tab">Footnotes</a></li>
+          <li><a href="#4" data-toggle="tab">Comments</a></li>
+          <li><a href="#5" data-toggle="tab">Similar Articles</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="1">
+            <span>
+              <%= @article.description %>
+            </span>
+          </div>
+
+          <div class="tab-pane" id="2">
+          </div>
+
+          <div class="tab-pane" id="3">
+            <span>
+              <%= @article.footnotes %>
+            </span>
+          </div>
+
+          <div class="tab-pane" id="4">
+            <%= render 'comments' %>
+          </div>
+
+          <div class="tab-pane" id="5">
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="article-text span8 pull-right">
-      <h3 class="article-position">
-        <strong>
-          <span>#<%= @article.position %> - </span>
-          <span><%= @article.title %></span>
-        </strong>
-      </h3>
-
-      <h4 class="article-sub-title">
-        <%= @article.published_at.strftime('%b %d, %Y') %> |
-        <%= link_to "tag 1", root_url %> |
-        <%= link_to "tag 2", root_url %> |
-        <%= link_to "tag 3", root_url %>
-      </h4>
-
-      <br/>
-      <span class="article-intro">
-        <%= @article.introduction %>
-      </span>
-      <ul class="nav nav-pills">
-        <li><%= link_to "<< Previous Article", @article.previous %></li>
-        <li><%= link_to "Next Article >>", @article.next %></li>
-      </ul>
-    </section>
-  </header>
-
-  <section id="tabs" class="article-nav page-header">
-    <div class="tabbable">
-
-      <ul class="nav nav-pills">
-        <li class="active"><a href="#1" data-toggle="tab">Description</a></li>
-        <li><a href="#2" data-toggle="tab">Gallery</a></li>
-        <li><a href="#3" data-toggle="tab">Footnotes</a></li>
-        <li><a href="#4" data-toggle="tab">Comments</a></li>
-        <li><a href="#5" data-toggle="tab">Similar Articles</a></li>
-      </ul>
-
-      <div class="tab-content">
-        <div class="tab-pane active" id="1">
-          <span>
-            <%= @article.description %>
-          </span>
-        </div>
-
-        <div class="tab-pane" id="2">
-        </div>
-
-        <div class="tab-pane" id="3">
-          <span>
-            <%= @article.footnotes %>
-          </span>
-        </div>
-
-        <div class="tab-pane" id="4">
-          <%= render 'comments' %>
-        </div>
-
-        <div class="tab-pane" id="5">
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-</div>
+  </div>
 </article>
