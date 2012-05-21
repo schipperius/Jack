@@ -14,22 +14,14 @@
 
     <header class="row-fluid page-header">
       <section class="article-image span4 columns pull-left">
-        <div>
-          <ul class="thumbnails">
-            <li>
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/360x270" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
+        <%= raw @article.title_image %>
       </section>
 
       <section class="article-text span8 pull-right">
         <h3 class="article-position">
           <strong>
-            <span>#<%= @article.position %> - </span>
-            <span><%= @article.title %></span>
+            <span>#<%= raw @article.position %> - </span>
+            <span><%= raw @article.title %></span>
           </strong>
         </h3>
 
@@ -42,52 +34,42 @@
 
         <br/>
         <span class="article-intro">
-          <%= @article.introduction %>
+          <%= raw @article.introduction %>
         </span>
         <ul class="nav nav-pills">
-          <li><%= link_to "<< Previous Article", @article.previous %></li>
-          <li><%= link_to "Next Article >>", @article.next %></li>
+          <li><%= link_to "< Previous Article", @article.previous %></li>
+          <li><%= link_to "Next Article >", @article.next %></li>
         </ul>
       </section>
     </header>
 
-    <section id="tabs" class="article-nav page-header">
+    <section id="tabs" class="article-nav">
       <div class="tabbable">
 
         <ul class="nav nav-pills">
-          <li class="active"><a href="#1" data-toggle="tab">Description</a></li>
-          <li><a href="#2" data-toggle="tab">Gallery</a></li>
-          <li><a href="#3" data-toggle="tab">Footnotes</a></li>
-          <li><a href="#4" data-toggle="tab">Comments</a></li>
-          <li><a href="#5" data-toggle="tab">Similar Articles</a></li>
+          <li class="active"><a href="#1" data-toggle="tab">
+          <%= raw @article.title %></a></li>
+          <li><a href="#2" data-toggle="tab">Comments</a></li>
+          <li><a href="#3" data-toggle="tab">Similar</a></li>
         </ul>
 
         <div class="tab-content">
           <div class="tab-pane active" id="1">
-            <span>
-              <%= @article.description %>
-            </span>
+            <%= raw @article.description %>
+            <%= render 'footnotes' %>
           </div>
-
           <div class="tab-pane" id="2">
-          </div>
-
-          <div class="tab-pane" id="3">
-            <span>
-              <%= @article.footnotes %>
-            </span>
-          </div>
-
-          <div class="tab-pane" id="4">
             <%= render 'comments' %>
           </div>
-
-          <div class="tab-pane" id="5">
+          <div class="tab-pane" id="3">
+            <%#= some code to identify similar articles by tag %> 
           </div>
         </div>
 
       </div>
     </section>
+
+    <%= render 'pagination' %>
 
   </div>
 </article>

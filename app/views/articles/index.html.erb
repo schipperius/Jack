@@ -24,9 +24,11 @@
         <div>
           <ul class="thumbnails">
             <li>
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/260x180" alt="">
-              </a>
+              <div class="thumbnail">
+                <%#= pull image in dynamically and separately from article, 
+                but how? %>
+                <%= image_tag "http://placehold.it/260x180", :alt => "Name", :size => "360x268" %>
+              </div>
             </li>
           </ul>
         </div>
@@ -53,8 +55,7 @@
         </h3>
 
         <p class="article-intro">
-          <%= truncate(strip_tags(article.introduction),
-            :length => 500, :separator => ' ') %>..
+          <%= truncate(strip_tags(article.introduction), :length => 500, :separator => ' ') %>..
           <%= link_to 'read more', article %>
         </p>
       </section>

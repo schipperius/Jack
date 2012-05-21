@@ -10,37 +10,50 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= f.label :position %>
-    <%= f.number_field :position %>
-  </div>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title, :cols => 80 %>
-  </div>
+  <section class="row-fluid span12 columns section-one">
+    <div class="field span6 columns pull-left">
+      <%= f.label :title %>
+      <%= f.text_field :title, :style => "width:400px" %>
+    </div>
+    <div class="field span6 columns pull-right">
+        <%= f.label :position %>
+      <%= f.number_field :position, :style => "width:140px" %>
+    </div>
+  </section>
 
-  <div class="field">
-    <%= f.label :introduction %>
-    <%= f.text_area :introduction, :rows => 6, :cols => 80 %>
-  </div>
+  <section class="row-fluid span 12 columns section-two">
+    <div class="field pull-left">
+      <%= f.label :title_image %>
+      <%= f.text_area :title_image, :rows => 12, :style => "width:740px" %>
+    </div>
+  </section>
 
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description, :rows => 6, :cols => 80 %>
-  </div>
+  <section class="row-fluid span 12 columns section-three">
+    <div class="field span6 columns pull-left">
+      <%= f.label :introduction %>
+      <%= f.text_area :introduction, :rows => 6, :style => "width:740px" %>
+    </div>
+  </section>
 
-  <div class="field">
-    <%= f.label :footnotes %><br />
-    <%= f.text_area :footnotes, :rows => 2 %>
-  </div>
+  <section class="row-fluid span 12 columns section-four">
+    <div class="field span12 columns pull-left">
+      <%= f.label :description %>
+      <%= f.text_area :description, :rows => 72, :style => "width:740px" %>
+    </div>
+  </section>
 
-  <div class="field">
-    <%= f.label :published_at %>
-    <%= f.datetime_select :published_at %>
-  </div>
-  
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <section class="row-fluid span 12 columns section-five">
+    <div class="field span12 columns pull-left">
+      <%= f.label :footnotes %>
+      <%= f.text_area :footnotes, :rows => 24, :style => "width:740px" %>
+    </div>
+  </section>
+
+  <section class="row-fluid span 12 columns section-six">
+    <div class="actions span12 columns section-six">
+      <%= f.submit %>
+    </div>
+  </section>
+
 <% end %>

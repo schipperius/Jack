@@ -1,0 +1,33 @@
+<%= form_for(@colophon) do |f| %>
+  <% if @colophon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@colophon.errors.count, "error") %> prohibited this colophon from being saved:</h2>
+
+      <ul>
+      <% @colophon.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :position %><br />
+    <%= f.number_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :permalink %><br />
+    <%= f.text_field :permalink %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

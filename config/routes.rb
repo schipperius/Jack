@@ -2,6 +2,9 @@ Jack::Application.routes.draw do
 
 # See how all your routes lay out with "rake routes"
 # Priority is based upon order of creation: first created, highest priority.
+  resources :articles do
+    resources :comments
+  end
 
   # The root of this site points to the articles index
   root                  :to => "articles#index"
@@ -9,7 +12,7 @@ Jack::Application.routes.draw do
   # The "about" pages, non-article static pages
   match '/acknowl',     :to => 'about#acknowl'
   match '/author',      :to => 'about#author'
-  match '/colophon',    :to => 'about#colophon'
+  #  match '/colophon',    :to => 'about#colophon'
   match '/copyright',   :to => 'about#copyright'
   match '/foreword',    :to => 'about#foreword'
   match '/intro',       :to => 'about#intro'
@@ -20,10 +23,11 @@ Jack::Application.routes.draw do
   match '/integrate',   :to => 'augment#integrate'
   match '/maps',        :to => 'augment#maps'
 
-  resources :articles do
-    resources :comments
-  end
-
+  # The colophon resource is used to add tools to colophon list
+  resources :colophons
+  
+#  match 'colophons/:id'   => 'show#view'
+  match 'colophons'       => 'colophons#index'
 end
 
   # Sample of regular route:
