@@ -11,6 +11,23 @@
     </div>
   <% end %>
 
+  <section role="navigation">
+    <ul class="pager pull-left">
+      <li id="fnref:title-image" class="footnote">
+        <a href="#fn:title-image">Title Image</a>
+      </li>
+      <li id="fnref:introduction" class="footnote">
+        <a href="#fn:introduction">Introduction</a>
+      </li>
+      <li id="fnref:description" class="footnote">
+        <a href="#fn:description">Description</a>
+      </li>
+      <li id="fnref:footnotes" class="footnote">
+        <a href="#fn:footnotes">Footnotes</a>
+      </li>
+    </ul>
+  </section>
+
   <section class="row-fluid span12 columns section-one">
     <div class="field span6 columns pull-left">
       <%= f.label :title %>
@@ -24,36 +41,58 @@
 
   <section class="row-fluid span 12 columns section-two">
     <div class="field pull-left">
-      <%= f.label :title_image %>
-      <%= f.text_area :title_image, :rows => 12, :style => "width:740px" %>
+      <p id="fn:title-image"><%= f.label :title_image %></p>
+      <%= f.text_area :title_image, :rows => 18, :style => "width:740px" %>
     </div>
+  </section>
+
+  <section>
+    <ul class="actions pager span8 columns pull-right">
+      <%= f.submit %>
+      <a href="#">Back to top</a>
+    </ul>
   </section>
 
   <section class="row-fluid span 12 columns section-three">
     <div class="field span6 columns pull-left">
-      <%= f.label :introduction %>
-      <%= f.text_area :introduction, :rows => 6, :style => "width:740px" %>
+      <p id="fn:introduction"><%= f.label :introduction %></p>
+      <%= f.text_area :introduction, :rows => 12, :style => "width:740px" %>
     </div>
+  </section>
+
+  <section>
+    <ul class="actions pager span8 columns pull-right">
+      <%= f.submit %>
+      <a href="#">Back to top</a>
+    </ul>
   </section>
 
   <section class="row-fluid span 12 columns section-four">
     <div class="field span12 columns pull-left">
-      <%= f.label :description %>
-      <%= f.text_area :description, :rows => 72, :style => "width:740px" %>
+      <p id="fn:description"><%= f.label :description %></p>
+      <%= f.text_area :description, :rows => 96, :style => "width:740px" %>
     </div>
+  </section>
+
+  <section>
+    <ul class="actions pager span8 columns pull-right">
+      <%= f.submit %>
+      <a href="#">Back to top</a>
+    </ul>
   </section>
 
   <section class="row-fluid span 12 columns section-five">
     <div class="field span12 columns pull-left">
-      <%= f.label :footnotes %>
-      <%= f.text_area :footnotes, :rows => 24, :style => "width:740px" %>
+      <p id="fn:footnotes"><%= f.label :footnotes %></p>
+      <%= f.text_area :footnotes, :rows => 48, :style => "width:740px" %>
     </div>
   </section>
 
-  <section class="row-fluid span 12 columns section-six">
-    <div class="actions span12 columns section-six">
+  <section>
+    <ul class="actions pager span8 columns pull-right">
       <%= f.submit %>
-    </div>
+      <a href="#">Back to top</a>
+    </ul>
   </section>
 
 <% end %>

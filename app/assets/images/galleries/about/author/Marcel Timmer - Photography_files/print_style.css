@@ -1,0 +1,245 @@
+	body {
+  		font-family: 			tahoma, verdana, helvetica, arial, sans-serif;
+  		font-size: 			medium;
+		text-align:			center;
+		color: 				black;
+		margin: 			5px;
+		margin-top: 			10px;
+		padding: 			5px;
+		background-color: 		#013455;
+		}
+
+	div#main {
+		margin: 			0;
+		padding: 			0;
+		text-align: 			left;
+  		font-size: 			small;
+		text-align: 			justify;
+		}
+
+	div#top_banner {
+		display:			none;
+		}
+
+	div#left {
+		width:				100%;
+		font-weight:			normal;
+		font-style:			normal;
+		margin: 			0;
+		padding: 			5px;
+		padding-left: 			10px;
+		padding-right: 			0;
+		line-height:			2em;
+		vertical-align:			top;
+		border: 			0;
+		}
+
+	div#right {
+		padding: 			0;
+		margin:				0;
+		vertical-align:			top;
+		border: 			0;
+		}
+
+	div.boxtype1 {
+		margin: 			0;
+		padding-bottom: 		10px;
+		}
+
+	div.boxtype2 {
+		margin: 			1em 0 0 0;
+		padding-bottom: 		10px;
+		}
+
+	div#frame {
+		padding: 			10px;
+		margin:				0;
+		}
+
+	div#footer {
+		margin: 			0;
+		padding:			5px;
+		padding-top:			15px;
+		text-align:			right;
+		font-size:			xx-small;
+		color:				gray;
+		}
+
+	div.portfolio {
+		margin: 			0;
+		margin-top: 			20px;
+		margin-bottom: 			1px;
+		padding:			0;
+		font-style:			normal;
+		font-weight:			normal;
+		}
+
+	div.portfolio var {
+		font-size:			x-small;
+		}
+
+	div#links {
+		line-height:			2em;
+		}
+
+	img.ico {
+		display:				none;
+		}
+
+	img.portf {
+		height:				65px;
+		width:				90px;
+		border:				0;
+		margin:				0;
+		margin-top:			5px;
+		display:			block;
+		}
+
+	table.photo img {
+		margin:				15px auto 0 auto;
+		border:				1px solid gray;
+		display:			block;
+		}
+
+	img#portret {
+		float:				right;
+		width:				120px;
+		height:				90px;
+		border:				1px solid gray;
+		margin:				2px 2px 2px 5px;
+		}	
+
+	img.sq_front {
+		float:				right;
+		width:				150px;
+		height:				150px;
+		border:				1px solid gray;
+		margin:				2px 2px 2px 5px;
+		}	
+
+	ol, li, ul {
+  		list-style-type: 		none;
+		line-height: 			2em;
+		}
+
+	div#left ul {
+		margin:				0;
+		padding:			0;
+		}
+
+	div#left ul li {
+		height:				1.2em;
+		margin:				0;
+		padding:			0;
+		text-indent:			0;
+		line-height:			1.2em;
+		}
+
+	h1 {
+		font-weight:			bold;
+		font-style:			normal;
+		font-size:			1em;
+		color:				#00009C;
+		display:			block;
+		margin:				0;
+		padding:			0;
+		}
+
+	h2 {
+  		font-family: 			tahoma, verdana, helvetica, arial, sans-serif;
+		font-weight:			normal;
+		font-size:			1em;
+		font-style:			normal;
+		margin-left:			0;
+		padding-left:			0;
+		text-align:			left;
+		}
+
+	dfn {
+		display:			block;
+  		font-family: 			tahoma, verdana, helvetica, arial, sans-serif;
+		font-weight:			normal;
+		font-style:			normal;
+		font-size:			.7em;
+		padding-left:			0;
+		margin:				-1em 15px 0 0;
+		}
+
+	form {
+		margin-top:			0;
+  		font-family: 			tahoma, verdana, helvetica, arial, sans-serif;
+		text-align: 			left;
+  		font-size: 			small;
+		}		
+
+	textarea#small {
+		width:				240px;
+		height:				100px;
+		margin-top:			0;
+  		font-family: 			tahoma, verdana, helvetica, arial, sans-serif;
+		text-align: 			left;
+  		font-size: 			small;
+		border:				1px solid #003E5F;
+		}		
+
+	input.field {
+		border:				1px solid #003E5F;
+		margin-bottom:			2px;
+		}
+
+	textarea#large {
+		width:				90%;
+		height:				150px;
+		border:				1px solid #003E5F;;
+		margin-bottom:			2px;
+		}
+
+	input.button {
+		border:				1px solid #003E5F;;
+		}
+
+	input.radio {
+		}
+
+	a:link {
+		color: 				#000087;
+		text-decoration: 		none;
+		}
+
+	a:visited {
+		color: 				#0000D4;
+		text-decoration: 		none;
+		}
+
+	a:active {
+		color: 				#000087;
+		text-decoration: 		none;
+		}
+
+	a:hover {
+		color: 				#0000D4;
+		text-decoration: 		none;
+		}
+
+	.menu{
+		display:			block;
+		}
+
+	div#links a, div#links a:visited{
+		display:			block;
+		}
+
+
+div.scroller0 {
+	height:			auto;
+	overflow:		auto;
+	width:			auto;
+	}
+
+div.scroller1 {
+	}
+
+div.scroller1 table td {
+	padding:		2px;
+	height:			140px;
+	}

@@ -1,0 +1,32 @@
+@import "generic_style.css";
+
+
+	ul#menu li a {height:40px;width:130px;display:block;}
+
+	li#menu_i a span.text {	display:	none;}
+	li#menu_i a {		background:	#fff url(img/marcel-timmer_button_index.png) no-repeat 0 0;}
+	li#menu_i a:hover {	background:	#fff url(img/marcel-timmer_button_index-hover.png) no-repeat 0 0;}
+
+	li#menu_w a span.text {	display:	none;}
+	li#menu_w a {		background:	#fff url(img/marcel-timmer_button_weblog.png) no-repeat 0 0;}
+	li#menu_w a:hover {	background:	#fff url(img/marcel-timmer_button_weblog-hover.png) no-repeat 0 0;}
+
+	li#menu_s a span.text {	display:	none;}
+	li#menu_s a {		background:	#fff url(img/marcel-timmer_button_showcase.png) no-repeat 0 0;}
+	li#menu_s a:hover {	background:	#fff url(img/marcel-timmer_button_showcase-hover.png) no-repeat 0 0;}
+
+	li#menu_c a span.text {	display:	none;}
+	li#menu_c a {		background:	#fff url(img/marcel-timmer_button_concepts.png) no-repeat 0 0;}
+	li#menu_c a:hover {	background:	#fff url(img/marcel-timmer_button_concepts-hover.png) no-repeat 0 0;}
+
+	li#menu_p a span.text {	display:	none;}
+	li#menu_p a {		background:	#fff url(img/marcel-timmer_button_photography.png) no-repeat 0 0;}
+	li#menu_p a:hover {	background:	#fff url(img/marcel-timmer_button_photography-hover.png) no-repeat 0 0;}
+
+	li#menu_l a span.text {	display:	none;}
+	li#menu_l a {		background:	#fff url(img/marcel-timmer_button_links.png) no-repeat 0 0;}
+	li#menu_l a:hover {	background:	#fff url(img/marcel-timmer_button_links-hover.png) no-repeat 0 0;}
+
+	li#menu_o a span.text {	display:	none;}
+	li#menu_o a {		background:	#fff url(img/marcel-timmer_button_contact.png) no-repeat 0 0;}
+	li#menu_o a:hover {	background:	#fff url(img/marcel-timmer_button_contact-hover.png) no-repeat 0 0;}

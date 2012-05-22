@@ -1,0 +1,310 @@
+	body {
+		font-family:			tahoma, verdana, helvetica, sans-serif;
+  		font-size: 			medium;
+		text-align:			center;
+		color: 				black;
+		margin: 			5px;
+		margin-top: 			10px;
+		padding: 			5px;
+		background-color: 		#013455;
+		}
+
+	div#main {
+		margin: 			0;
+		padding: 			0;
+		text-align: 			left;
+  		font-size: 			small;
+		text-align: 			justify;
+		border-left: 			1px solid gray;
+		border-right: 			1px solid gray;
+		background-color:		#f5f5f5;
+		}
+
+	div#left {
+		font-weight:			normal;
+		font-style:			normal;
+		margin: 			0;
+		padding: 			5px;
+		padding-left: 			10px;
+		padding-right: 			0;
+		line-height:			2em;
+		border-bottom:			1px solid gray;
+		}
+
+	div#right {
+		padding: 			0;
+		margin:				0;
+		vertical-align:			top;
+		border: 			0;
+		background-color: 		white;
+		}
+
+	div.qlinks {
+		padding:0 0 0 10px;
+		text-align:left;
+		line-height:2.4em;
+		border-bottom:1px solid #808080;
+		}
+
+	div.boxtype1 {
+		margin: 			0;
+		margin-top: 			0;
+		padding-bottom: 		10px;
+		}
+
+	div.boxtype2 {
+		margin: 			0;
+		margin-top: 			1em;
+		padding-top: 			10px;
+		padding-bottom: 		10px;
+		}
+
+	div#frame {
+		padding: 			10px;
+		margin:				0;
+		min-height:			460px;
+		background-image:		url(img/bg_freeze.png);
+		background-position:		bottom right;
+		background-repeat:		no-repeat;
+		}
+
+	div#buttons {
+		float: 				right; 
+		margin: 			0px 0px 15px 15px; 
+		padding:			0;
+		text-align:			left;
+		}
+
+	div#footer {
+		margin: 			0;
+		padding:			15px 10px 15px 10px;
+		text-align:			right;
+		font-size:		 	.8em;
+		color:				gray;
+		border-top:			1px solid gray;
+		}
+
+	div#footer p {
+		margin: 			0;
+		padding:			0;
+		}
+
+	div.portfolio {
+		margin: 			0;
+		margin-top: 			20px;
+		margin-bottom: 			1px;
+		padding:			0;
+		font-style:			normal;
+		font-weight:			normal;
+		display:			block;
+		clear:				both;
+		}
+
+	div.quote {
+		font-style:			normal;
+		padding:			20px;
+		}
+
+	div.code {
+		font-family:			courier, helvetica, sans-serif;
+		padding:			20px;
+		}
+
+	div#links {
+		line-height:			2em;
+		}
+
+	img.icon {
+		height:				28px;
+		width:				28px;
+		border:				0;
+		margin:				0;
+		}
+
+	img.portf {
+		height:				65px;
+		width:				90px;
+		border:				0;
+		margin:				10px 0 10px 0;
+		display:			block;
+		clear:				both;
+		}
+
+	table.photo img {
+		margin:				15px auto 0 auto;
+		border:				1px solid gray;
+		display:			block;
+		}
+
+	img#portret {
+		float:				right;
+		width:				120px;
+		height:				90px;
+		border:				1px solid gray;
+		margin:				2px;
+		margin-left:			5px;
+		}	
+
+	img#portret {
+		float:				right;
+		width:				120px;
+		height:				90px;
+		border:				1px solid gray;
+		margin:				2px 2px 2px 5px;
+		}	
+
+	img.sq_front {
+		display:			none;
+		float:				right;
+		width:				150px;
+		height:				150px;
+		border:				1px solid gray;
+		margin:				2px 2px 2px 5px;
+		}	
+
+	img#nedstats {
+		border:				0;
+		width:				18px;
+		height:				18px;
+		}
+
+	ol, li, ul {
+  		list-style-type: 		none;
+		line-height: 			2em;
+		margin:				0;
+		padding:			0;
+		}
+
+	div#left ul {
+		margin:				0;
+		margin-bottom:			1.4em;
+		padding:			0;
+		}
+
+	div#left ul li {
+		height:				1.2em;
+		margin:				0;
+		padding:			0;
+		text-indent:			0;
+		line-height:			1.2em;
+		}
+
+	h1 {
+		font-size:			1.2em;
+		letter-spacing:			0em;
+		font-weight:			bold;
+		font-style:			normal;
+		color:				#000;
+		display:			block;
+		margin:				0;
+		padding:			0;
+		}
+
+	h2 {
+		font-size:			.8em;
+		font-weight:			normal;
+		font-style:			normal;
+		color:				black;
+		display:			block;
+		margin:				0;
+		margin-bottom:			10px;
+		padding:			0;
+		}
+
+	dfn {
+		display:			block;
+		font-family:			tahoma, verdana, helvetica, sans-serif;
+		font-weight:			normal;
+		font-style:			normal;
+		font-size:			.7em;
+		margin-left:			0;
+		padding-left:			0;
+		margin-top:			-1em;
+		margin-right:			15px;
+		margin-bottom:			0;
+		}
+
+	var {
+		font-family:			tahoma, verdana, helvetica, sans-serif;
+		font-weight:			normal;
+		font-style:			normal;
+		font-size:			.7em;
+		margin:				0 0 10px 0;
+		padding:			0;
+		}
+
+	form {
+		margin-top:			0;
+		font-family:			tahoma, verdana, helvetica, sans-serif;
+		text-align: 			left;
+  		font-size: 			small;
+		}		
+
+	textarea#small {
+		width:				90%;
+		height:				100px;
+		margin-top:			0;
+		font-family:			tahoma, verdana, helvetica, sans-serif;
+		text-align: 			left;
+  		font-size: 			small;
+		border:				1px solid #003E5F;
+		}		
+
+	input.field {
+		font-family:			tahoma, verdana, helvetica, sans-serif;
+		border:				1px solid #003E5F;
+		margin-bottom:			2px;
+		}
+
+	textarea#large {
+		width:				90%;
+		height:				150px;
+		margin-bottom:			2px;
+  		font-family: 			tahoma, verdana, helvetica, arial, sans-serif;
+		text-align: 			left;
+  		font-size: 			small;
+		border:				1px solid #003E5F;
+		}
+
+	input.button {
+		border:				1px solid #003E5F;;
+		}
+
+	input.radio {
+		}
+
+
+	a:link,a:active {
+		color: 				#0000cf;
+		text-decoration: 		none;
+		}
+
+	a:visited {
+		color: 				#0000cf;
+		text-decoration: 		none;
+		}
+
+	a:hover {
+		color: 				#444;
+		text-decoration: 		underline;
+		}
+
+	div.portfolio a {
+		text-decoration: 		none;
+		}
+
+	div#left a {
+		color: 				#0000cf;
+		padding:			0 0 0 0;
+		line-height:			1.6em;
+		text-decoration: 		none;
+		}
+
+	div#left a span {
+		text-decoration: 		underline;
+		}
+
+	div#left a:hover {
+		text-decoration: 		underline;
+		color:				#444;
+		}
