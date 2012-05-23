@@ -16,9 +16,8 @@ Jack::Application.configure do
   config.assets.js_compressor  = :uglifier
   config.assets.css_compressor = :scss
 
-  config.assets.digest = true
-  
   config.assets.compile = true
+  config.assets.digest = true
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
@@ -65,5 +64,6 @@ Jack::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
-
+  config.assets.initialize_on_precompile = false
+  
 end

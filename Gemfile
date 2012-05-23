@@ -8,6 +8,7 @@ source 'https://rubygems.org'
   gem "acts-as-taggable-on", "~> 2.2.2"
   gem "thin", "~> 1.3.1"
   gem "heroku", "~> 2.21.2"
+  gem "yui-compressor", "~> 0.9.6"
 
 group :assets do
   gem 'sass-rails',   '3.2.4'
