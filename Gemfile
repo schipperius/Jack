@@ -32,14 +32,14 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara', '1.1.2'
+  gem "cucumber-rails", "~> 1.0", require: false
+  gem 'spork', '0.9.0'
   gem 'database_cleaner'
-# gem 'rb-fsevent', '0.4.3.1', :require => false
-# does not seem to work with heroku db:push
+  gem 'capybara', '1.1.2'
   gem "growl", "~> 1.0.3"
   gem 'ruby_gntp' # needed for Heroku
-  gem 'spork', '0.9.0'
-  gem "cucumber-rails", "~> 1.0", require: false
+# gem 'rb-fsevent', '0.4.3.1', :require => false
+# does not seem to work with heroku db:push
 end
 
 group :production do
