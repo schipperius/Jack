@@ -7,11 +7,33 @@
 !binary "YXBwbGUvYXBwbGUtdG91Y2gtaWNvbi03Mng3Mi1wcmVjb21wb3NlZC5wbmc=": apple/apple-touch-icon-72x72-precomposed-ae5f12d60efb9b46d11ba5235b7704ec.png
 !binary "YXBwbGUvYXBwbGUtdG91Y2gtaWNvbi1wcmVjb21wb3NlZC5wbmc=": apple/apple-touch-icon-precomposed-fc2c1276ff562baa6549e42cddb6bbb2.png
 !binary "YXBwbGUvYXBwbGUtdG91Y2gtaWNvbi5wbmc=": apple/apple-touch-icon-fc2c1276ff562baa6549e42cddb6bbb2.png
-!binary "YXJ0aWNsZXMvMS1hdXRob3IvZGVuYXJpdXMuanBn": articles/1-author/denarius-35ab30b08f78f2c55a4aa631e867ac83.jpg
-!binary "YXJ0aWNsZXMvMS1hdXRob3IvZHJ1aWRzLmpwZw==": articles/1-author/druids-9fd98bf2fec298cdf74ea9a0a2c042f4.jpg
-!binary "YXJ0aWNsZXMvMS1hdXRob3Iva2F0d2lqay1hcmlhbC5qcGc=": articles/1-author/katwijk-arial-e2518531080cd4f76715133287955740.jpg
-!binary "YXJ0aWNsZXMvMS1hdXRob3Ivb3VkZS1yaWpuLmpwZw==": articles/1-author/oude-rijn-707ba8eadcf8402279caec6c6afdae0f.jpg
-!binary "YXJ0aWNsZXMvMS1hdXRob3IvdmVyY2luZ2V0b3JpeC5qcGc=": articles/1-author/vercingetorix-40cc5af3dc1881752dfd6439437531e7.jpg
+? !binary |-
+  YXJ0aWNsZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9fZGVzY3JpcHRpb24u
+  aHRtbA==
+: articles/1-caesar-conquers-gaul/_description-471616178b6ec5291860f956cbeae97b.html
+? !binary |-
+  YXJ0aWNsZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9fZm9vdG5vdGVzLmh0
+  bWw=
+: articles/1-caesar-conquers-gaul/_footnotes-510427c7c3c95270ec8e13129b8d8567.html
+? !binary |-
+  YXJ0aWNsZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9faW50cm9kdWN0aW9u
+  Lmh0bWw=
+: articles/1-caesar-conquers-gaul/_introduction-e50860cb19e66e6ed59863167d1584aa.html
+? !binary |-
+  YXJ0aWNsZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9fdGl0bGUtaW1hZ2Uu
+  aHRtbA==
+: articles/1-caesar-conquers-gaul/_title-image-2178229ba336ba339fa9448f207019e2.html
+!binary "YXJ0aWNsZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9kZW5hcml1cy5qcGc=": articles/1-caesar-conquers-gaul/denarius-35ab30b08f78f2c55a4aa631e867ac83.jpg
+!binary "YXJ0aWNsZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9kcnVpZHMuanBn": articles/1-caesar-conquers-gaul/druids-9fd98bf2fec298cdf74ea9a0a2c042f4.jpg
+? !binary |-
+  YXJ0aWNsZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9rYXR3aWprLWFyaWFs
+  LmpwZw==
+: articles/1-caesar-conquers-gaul/katwijk-arial-e2518531080cd4f76715133287955740.jpg
+!binary "YXJ0aWNsZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9vdWRlLXJpam4uanBn": articles/1-caesar-conquers-gaul/oude-rijn-707ba8eadcf8402279caec6c6afdae0f.jpg
+? !binary |-
+  YXJ0aWNsZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC92ZXJjaW5nZXRvcml4
+  LmpwZw==
+: articles/1-caesar-conquers-gaul/vercingetorix-40cc5af3dc1881752dfd6439437531e7.jpg
 !binary "YXJ0aWNsZXMvMi1wcmVmYWNlL2JhcnJlbi1wcmFpcmllLmpwZw==": articles/2-preface/barren-prairie-566dd83b0c07e6d6f2395fe7d7f9e70d.jpg
 !binary "YXJ0aWNsZXMvMi1wcmVmYWNlL2phY2stbyctbGFudGVybi5wbmc=": articles/2-preface/jack-o'-lantern-6b67e7733372be358beb8cde7a70ea14.png
 !binary "YXJ0aWNsZXMvMy1pbnRyb2R1Y3Rpb24vZ2VuZXZhLWJpYmxlLmpwZw==": articles/3-introduction/geneva-bible-c5fa281149dae287c1d7c3a207ae909d.jpg
