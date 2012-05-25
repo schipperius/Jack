@@ -31,16 +31,16 @@
   <% end %>
 </section>
 
-<section>
+<section class="comments">
   <div id="post-comments">
     <%= form_for([@article, @article.comments.build]) do |f| %>
     <div class="field">
       <%= f.label :name %>
-      <%= f.text_field :name %>
+      <%= f.text_field :name, :style => "width:250px" %>
     </div>
     <div class="field">
       <%= f.label :content %>
-      <%= f.text_area :content, :rows => '4' %>
+      <%= f.text_area :content, :rows => '6', :style => "width:540px" %>
     </div>
     <div class="actions">
       <%= f.submit "Post Comment" %>
