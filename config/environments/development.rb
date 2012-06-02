@@ -35,6 +35,7 @@ Jack::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = false
 
-  config.assets.precompile += %w[modernizr.js]
+  config.assets.precompile += %w( modernizr.js )
+  config.assets.precompile += %w( bootstrap.js )
 
 end
