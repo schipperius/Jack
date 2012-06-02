@@ -9,6 +9,7 @@ source 'https://rubygems.org'
   gem "thin", "~> 1.3.1"
   gem "heroku", "~> 2.21.2"
   gem "yui-compressor", "~> 0.9.6"
+  gem "paperclip", "~> 3.0.4"
 
 group :assets do
   gem 'sass-rails',   '3.2.4'

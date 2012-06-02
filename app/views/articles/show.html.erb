@@ -1,75 +1,93 @@
-<article class="row-fluid">
-  <div class="span12 columns">
+<!--  Article Admin
+  ===================================================== -->
+  <section>
+    <p id="notice"><%= notice %></p>
+    <ul class="nav nav-pills">
+      <li><%= link_to 'Back', articles_path %></li>
+      <li><%= link_to 'Edit', edit_article_path(@article) %></li>
+      <li><%= link_to 'Destroy', @article, 
+      confirm: 'Are you sure?', 
+      method: :delete %> </li>
+    </ul>
+  </section>
 
-    <section>
-      <p id="notice"><%= notice %></p>
-      <ul class="nav nav-pills">
-        <li><%= link_to 'Back', articles_path %></li>
-        <li><%= link_to 'Edit', edit_article_path(@article) %></li>
-        <li><%= link_to 'Destroy', @article, 
-        confirm: 'Are you sure?', 
-        method: :delete %> </li>
-      </ul>
-    </section>
+  <!-- Article
+  ======================================================= -->
+  <article class="row-fluid">
+    <div class="span12 columns">
 
-    <header class="row-fluid page-header">
-      <section class="article-image span4 columns pull-left">
-        <%= raw @article.title_image %>
+      <!-- Article Header
+      ================================================= -->
+      <header class="row-fluid page-header">
+        <section class="article-image span4 columns pull-left">
+          <%= raw @article.title_image %>
+        </section>
+        <section class="article-text span8 pull-right">
+          <h3 class="article-position">
+            <strong>
+              <span>#<%= raw @article.position %> - </span>
+              <span><%= raw @article.title %></span>          
+            </strong>
+          </h3>
+          <h4 class="article-sub-title">
+            <%= @article.published_at.strftime('%b %d, %Y') %> |
+            <%= link_to "tag 1", root_url %> |
+            <%= link_to "tag 2", root_url %> |
+            <%= link_to "tag 3", root_url %>
+          </h4>
+          <br/>
+          <div class="article-intro">
+            <%= raw @article.introduction %>
+          </div>
+          <ul class="nav nav-pills">
+            <li><%= link_to "< Previous Article", @article.previous %></li>
+            <li><%= link_to "Next Article >", @article.next %></li>
+          </ul>
+        </section>
+      </header>
+
+      <!-- Article Navigation
+      ================================================= -->
+      <section id="tabs" class="article-nav">
+        <div class="tabbable">
+
+          <ul class="nav nav-pills">
+            <li class="active"><a href="#1" data-toggle="tab">
+            Current Article</a></li>
+            <li><a href="#2" data-toggle="tab">Comments</a></li>
+            <li><a href="#3" data-toggle="tab">Similar Articles</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="1">
+              <!-- Article Body
+              ======================================================= -->
+              <%= raw @article.description %>
+
+              <!-- Article Footnotes
+              ======================================================= -->
+              <%= render 'footnotes' %>
+            </div>
+
+            <!-- Article Comments
+            ======================================================= -->
+            <div class="tab-pane" id="2">
+              <%= render 'comments' %>
+            </div>
+
+            <!-- Similar Articles
+            ======================================================= -->
+            <div class="tab-pane" id="3">
+              <%#= some code to identify similar articles by tag %> 
+            </div>
+          </div>
+
+        </div>
       </section>
 
-      <section class="article-text span8 pull-right">
-        <h3 class="article-position">
-          <strong>
-            <span>#<%= raw @article.position %> - </span>
-            <span><%= raw @article.title %></span>
-          </strong>
-        </h3>
+      <!-- Article Pagination
+      ================================================= -->
+      <%= render 'pagination' %>
 
-        <h4 class="article-sub-title">
-          <%= @article.published_at.strftime('%b %d, %Y') %> |
-          <%= link_to "tag 1", root_url %> |
-          <%= link_to "tag 2", root_url %> |
-          <%= link_to "tag 3", root_url %>
-        </h4>
-
-        <br/>
-        <div class="article-intro">
-          <%= raw @article.introduction %>
-        </div>
-        <ul class="nav nav-pills">
-          <li><%= link_to "< Previous Article", @article.previous %></li>
-          <li><%= link_to "Next Article >", @article.next %></li>
-        </ul>
-      </section>
-    </header>
-
-    <section id="tabs" class="article-nav">
-      <div class="tabbable">
-
-        <ul class="nav nav-pills">
-          <li class="active"><a href="#1" data-toggle="tab">
-          Current Article</a></li>
-          <li><a href="#2" data-toggle="tab">Comments</a></li>
-          <li><a href="#3" data-toggle="tab">Similar Articles</a></li>
-        </ul>
-
-        <div class="tab-content">
-          <div class="tab-pane active" id="1">
-            <%= raw @article.description %>
-            <%= render 'footnotes' %>
-          </div>
-          <div class="tab-pane" id="2">
-            <%= render 'comments' %>
-          </div>
-          <div class="tab-pane" id="3">
-            <%#= some code to identify similar articles by tag %> 
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <%= render 'pagination' %>
-
-  </div>
-</article>
+    </div>
+  </article>

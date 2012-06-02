@@ -22,9 +22,7 @@
             <ul class="thumbnails">
               <li>
                 <div class="thumbnail">
-                  <%#= pull image in dynamically and separately from article, 
-                  but how? %>
-                  <%= image_tag "http://placehold.it/200x150", :alt => "Name", :size => "200x150" %>
+                  <%= image_tag article.image.url, :size => "250x100" %>
                 </div>
               </li>
             </ul>

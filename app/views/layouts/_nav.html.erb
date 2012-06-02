@@ -1,4 +1,4 @@
-<!-- Top Nav
+<!-- Site Navigation
   ===================================================== -->
   <nav role="navigation" id="main-nav" class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -10,13 +10,11 @@
           <span class="icon-bar"></span>
         </a>
 
-        <%= link_to "Book of Jack", preface_path, :class => "brand" %>
+        <ul class="nav">
+          <%= link_to "About Jack", root_path, :class => "brand" %>
+        </ul>
 
         <div class="nav-collapse">
-          <ul class="nav">
-            <li><%= link_to "Browse Articles", root_path %></li>
-          </ul>
-
           <form role="search" class="navbar-search">
             <input type="text" class="search-query span3" placeholder="Search Articles">
           </form>
