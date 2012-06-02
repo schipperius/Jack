@@ -1,58 +1,38 @@
-<nav role="navigation" id="Main-nav" class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
+<!-- Top Nav
+  ===================================================== -->
+  <nav role="navigation" id="main-nav" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
 
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
 
-      <%= link_to "Book of Jack", preface_path, :class => "brand" %>
+        <%= link_to "Book of Jack", preface_path, :class => "brand" %>
 
-      <div class="nav-collapse">
-        <ul class="nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="nav-header">Front Matter</li>
-              <li><%= link_to "Contents", toc_path %></li>
-              <li><%= link_to "Foreword", foreword_path %></li>
-              <li><%= link_to "Preface", preface_path %></li>
-              <li><a href="/articles/26">Author</a></li>
-              <li><%= link_to "Acknowledgement", acknowl_path %></li>
-              <li><%= link_to "Introduction", intro_path %></li>
-              <li class="divider"></li>
-              <li class="nav-header">Body Matter</li>
-              <li><%= link_to "Browse Articles", root_path %></li>
-              <li class="divider"></li>
-              <li class="nav-header">Back Matter</li>
-              <li><%= link_to "Copyright", copyright_path %></li>
-              <li><%= link_to "Colophon", colophons_path %></li>
-            </ul>
-          </li>
-        </ul>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "Browse Articles", root_path %></li>
+          </ul>
 
-        <ul class="nav">
-          <li><%= link_to "Browse Articles", root_path %></li>
-        </ul>
+          <form role="search" class="navbar-search">
+            <input type="text" class="search-query span3" placeholder="Search Articles">
+          </form>
 
-        <form role="search" class="navbar-search">
-          <input type="text" class="search-query span3" placeholder="Search Articles">
-        </form>
+          <ul class="nav">
+            <li><%= link_to "Galleries", galleries_path %></li>
+            <li><%= link_to "Maps", maps_path %></li>
+          </ul>
 
-        <ul class="nav">
-          <li><%= link_to "Galleries", galleries_path %></li>
-          <li><%= link_to "Maps", maps_path %></li>
-        </ul>
-
-        <ul class="nav pull-right">
-          <li><%= link_to "Sign In" %></li>
-          <li><%= link_to "Contact", '#' %></li>
-        </ul>
+          <ul class="nav pull-right">
+            <li><%= link_to "Sign In" %></li>
+            <li><%= link_to "Contact", '#' %></li>
+          </ul>
+        </div>
 
       </div>
-    </div>
 
-  </div>
-</nav>
+    </div>
+  </nav>

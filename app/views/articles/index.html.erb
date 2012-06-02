@@ -1,74 +1,72 @@
-<article class="row-fluid">
-<div class="span12 columns">
-
-  <section id="admin" class="row-fluid">
+<!-- Main Article
+  ===================================================== -->
+  <section role="alertdialog" id="admin">
     <ul class="nav">
       <li><%= link_to 'New Article', new_article_path %></li>
     </ul>
   </section>
 
-  <section role="complementary" id="side-bar">
-    <div class="span3 columns pull-right">
-      <%= render 'layouts/toc' %>
+  <article class="container-fluid">
+    <div class="row-fluid">
+
+      <section role="main" class="span9 article-brief">
+        <header class="page-header">
+          <h1 class="about"><small>List of Articles</small>
+          </h1>
+        </header>
+
+        <% @articles.each do |article| %>
+        <header class="row-fluid page-header">
+
+          <section class="span4 pull-left">
+            <ul class="thumbnails">
+              <li>
+                <div class="thumbnail">
+                  <%#= pull image in dynamically and separately from article, 
+                  but how? %>
+                  <%= image_tag "http://placehold.it/200x150", :alt => "Name", :size => "200x150" %>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="span8 pull-right article-text">
+            <h4 class="accent">
+              <span class="article-position">
+                Article #<%= article.position %> &ndash;
+              </span>
+              <span class="article-published_at">
+                <%= article.published_at.strftime('%b %d, %Y') %> &nbsp;
+              </span>
+              <span class="article-comments-size">
+                <%= link_to pluralize(article.comments.size, "comment"),
+                  article_path(article, 
+                  :view => "comments"), 
+                  :class => "comment_count" %>
+              </span>
+            </h4>
+
+            <h3 class="article-title accent">
+              <%= link_to article.title, article %>
+            </h3>
+
+            <p class="article-intro">
+              <%= truncate(strip_tags(article.introduction), :length => 500, :separator => ' ') %>..
+              <%= link_to 'read more', article %>
+            </p>
+          </section>
+
+        </header>
+        <% end %>
+
+        <footer class="pagination pull-right page-header">
+          <%= will_paginate :previous_label => h("<"), :next_label => h(">") %>
+        </footer>
+      </section>
+
+      <section role="complementary" id="side-bar" class="span3 columns">
+        <%= render 'layouts/tags' %>
+      </section>
+
     </div>
-  </section>
-
-  <section class="article-brief row-fluid">
-    <div class="span9 columns pull-left">
-
-    <% @articles.each do |article| %>
-
-    <header class="row-fluid page-header">
-
-      <section class="article-image span4 columns pull-left">
-        <div>
-          <ul class="thumbnails">
-            <li>
-              <div class="thumbnail">
-                <%#= pull image in dynamically and separately from article, 
-                but how? %>
-                <%= image_tag "http://placehold.it/260x180", :alt => "Name", :size => "360x268" %>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="article-text span8 pull-right">
-        <h4 class="accent">
-          <span class="article-position">
-            Article #<%= article.position %> &ndash;
-          </span>
-          <span class="article-published_at">
-            <%= article.published_at.strftime('%b %d, %Y') %> &nbsp;
-          </span>
-          <span class="article-comments-size">
-            <%= link_to pluralize(article.comments.size, "comment"),
-              article_path(article, 
-              :view => "comments"), 
-              :class => "comment_count" %>
-          </span>
-        </h4>
-
-        <h3 class="article-title accent">
-          <%= link_to article.title, article %>
-        </h3>
-
-        <p class="article-intro">
-          <%= truncate(strip_tags(article.introduction), :length => 500, :separator => ' ') %>..
-          <%= link_to 'read more', article %>
-        </p>
-      </section>
-
-    </header>
-    <% end %>
-
-    <footer class="pagination pull-right page-header">
-      <%= will_paginate :previous_label => h("<"), :next_label => h(">") %>
-    </footer>
-
-  </div>
-  </section>
-
-</div>
-</article>
+  </article>
