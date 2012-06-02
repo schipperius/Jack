@@ -33,10 +33,8 @@ module Jack
     # Add additional path to the assets path for pipeline compilation
     # config.assets.paths << "#{Rails.root}/article-images"
 
-    # For faster asset precompiles, you can partially load your application
-    # by setting config.assets.initialize_on_precompile to false,
-    # though in that case, templates cannot see application objects
-    # or methods. Heroku requires this to be false.
+    # To prevent initializing of your application and 
+    # connecting to the database. Heroku requires this to be false.
     config.assets.initialize_on_precompile = false
 
     # Enforce whitelist mode for mass assignment.
