@@ -1,8 +1,12 @@
 class Article < ActiveRecord::Base
 
   # => Paperclip gem, image upload
-  has_attached_file :image, :styles => { :small => "200x150>"}
-
+  has_attached_file :image, 
+  :styles => { :thumb => "100x100", 
+               :small => "200x150>", 
+               :medium => "300x225"}, 
+  :url => "/assets/article-images/:id/:style/:basename.:extension",
+  :path => ":rails_root/public/assets/article-images/:id/:style/:basename.:extension"
   validates_attachment_presence :image
   validates_attachment_size :image, :less_than => 5.megabytes
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/png']

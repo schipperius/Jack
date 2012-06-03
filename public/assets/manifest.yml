@@ -19,7 +19,10 @@
   YXJ0aWNsZS1pbWFnZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC92ZXJjaW5n
   ZXRvcml4LmpwZw==
 : article-images/1-caesar-conquers-gaul/vercingetorix-40cc5af3dc1881752dfd6439437531e7.jpg
-!binary "YXJ0aWNsZS1pbWFnZXMvMi1vdWRlLXJpam4vb3VkZS1yaWpuLmpwZw==": article-images/2-oude-rijn/oude-rijn-707ba8eadcf8402279caec6c6afdae0f.jpg
+? !binary |-
+  YXJ0aWNsZS1pbWFnZXMvMi1rYXR3aWprLWFhbi16ZWUvb3VkZS1yaWpuLmpw
+  Zw==
+: article-images/2-katwijk-aan-zee/oude-rijn-707ba8eadcf8402279caec6c6afdae0f.jpg
 ? !binary |-
   YXJ0aWNsZS1pbWFnZXMvMy1pbnRyb2R1Y3Rpb24vZ2VuZXZhLWJpYmxlLmpw
   Zw==

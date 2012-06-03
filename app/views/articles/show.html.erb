@@ -42,11 +42,11 @@
           <div class="article-intro">
             <%= raw @article.introduction %>
           </div>
-          <ul class="nav nav-pills">
-            <li><%= link_to "< Previous Article", @article.previous %></li>
-            <li><%= link_to "Next Article >", @article.next %></li>
-          </ul>
         </section>
+        <ul class="nav nav-pills">
+          <li><%= link_to "< Previous Article", @article.previous %></li>
+          <li><%= link_to "Next Article >", @article.next %></li>
+        </ul>
       </header>
 
       <!-- Article Navigation
