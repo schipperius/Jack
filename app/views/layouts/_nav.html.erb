@@ -11,12 +11,15 @@
         </a>
 
         <ul class="nav">
-          <%= link_to "About Jack", root_path, :class => "brand" %>
+          <li><%= link_to "About Jack", root_path, :class => "brand" %></li>
+          <li><%= link_to "Browse Articles", root_path %></li>
         </ul>
 
         <div class="nav-collapse">
+
           <form role="search" class="navbar-search">
-            <input type="text" class="search-query span3" placeholder="Search Articles">
+            <input type="text" class="search-query span3" 
+            placeholder="Search Articles">
           </form>
 
           <ul class="nav">

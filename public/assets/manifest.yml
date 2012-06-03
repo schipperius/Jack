@@ -16,23 +16,16 @@
   anBn
 : article-images/1-caesar-conquers-gaul/druids-9fd98bf2fec298cdf74ea9a0a2c042f4.jpg
 ? !binary |-
-  YXJ0aWNsZS1pbWFnZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9rYXR3aWpr
-  LWFyaWFsLmpwZw==
-: article-images/1-caesar-conquers-gaul/katwijk-arial-e2518531080cd4f76715133287955740.jpg
-? !binary |-
-  YXJ0aWNsZS1pbWFnZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC9vdWRlLXJp
-  am4uanBn
-: article-images/1-caesar-conquers-gaul/oude-rijn-707ba8eadcf8402279caec6c6afdae0f.jpg
-? !binary |-
   YXJ0aWNsZS1pbWFnZXMvMS1jYWVzYXItY29ucXVlcnMtZ2F1bC92ZXJjaW5n
   ZXRvcml4LmpwZw==
 : article-images/1-caesar-conquers-gaul/vercingetorix-40cc5af3dc1881752dfd6439437531e7.jpg
-!binary "YXJ0aWNsZS1pbWFnZXMvMi1wcmVmYWNlL2JhcnJlbi1wcmFpcmllLmpwZw==": article-images/2-preface/barren-prairie-566dd83b0c07e6d6f2395fe7d7f9e70d.jpg
-!binary "YXJ0aWNsZS1pbWFnZXMvMi1wcmVmYWNlL2phY2stbyctbGFudGVybi5wbmc=": article-images/2-preface/jack-o'-lantern-6b67e7733372be358beb8cde7a70ea14.png
+!binary "YXJ0aWNsZS1pbWFnZXMvMi1vdWRlLXJpam4vb3VkZS1yaWpuLmpwZw==": article-images/2-oude-rijn/oude-rijn-707ba8eadcf8402279caec6c6afdae0f.jpg
 ? !binary |-
   YXJ0aWNsZS1pbWFnZXMvMy1pbnRyb2R1Y3Rpb24vZ2VuZXZhLWJpYmxlLmpw
   Zw==
 : article-images/3-introduction/geneva-bible-c5fa281149dae287c1d7c3a207ae909d.jpg
+!binary "YXJ0aWNsZS1pbWFnZXMvMy1wcmVmYWNlL2JhcnJlbi1wcmFpcmllLmpwZw==": article-images/3-preface/barren-prairie-566dd83b0c07e6d6f2395fe7d7f9e70d.jpg
+!binary "YXJ0aWNsZS1pbWFnZXMvMy1wcmVmYWNlL2phY2stbyctbGFudGVybi5wbmc=": article-images/3-preface/jack-o'-lantern-6b67e7733372be358beb8cde7a70ea14.png
 !binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9jaHJvbWUucG5n": article-images/4-colophon/chrome-27e0e00b94b6f2212d4cee95872d9ed5.png
 !binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9naXQucG5n": article-images/4-colophon/git-8675c0809ffa0ca627127c8dbb3c868e.png
 !binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9ncm93bC5qcGVn": article-images/4-colophon/growl-a2c3adb309c006d390d1909fe1d1967e.jpeg
@@ -95,7 +88,7 @@
 !binary "dGl0bGUucG5n": title-2b19d4db28539967ed0a2f1247e00bde.png
 !binary "YXBwbGljYXRpb24uanM=": application-bb3f1db7bd31883b780569f136d6a6a0.js
 !binary "bW9kZXJuaXpyLmpz": modernizr-9bca90903f85924afe6be3ba5f414faf.js
-!binary "YXBwbGljYXRpb24uY3Nz": application-81d53e51e7c92371d3021b33316dd6ec.css
+!binary "YXBwbGljYXRpb24uY3Nz": application-620c84a8e714b59d02b6b540df234dd3.css
 !binary "Z2x5cGhpY29ucy1oYWxmbGluZ3Mtd2hpdGUucG5n": glyphicons-halflings-white-ef3d5b8d6a297804352b4a46fdb5466d.png
 !binary "Z2x5cGhpY29ucy1oYWxmbGluZ3MucG5n": glyphicons-halflings-0e7ff93d8f48fe1f5f762e4312e78da7.png
 !binary "Ym9vdHN0cmFwLmpz": bootstrap-2553795c8272a4e04cf5b82c5439ed95.js

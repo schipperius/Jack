@@ -5,8 +5,8 @@
 /* First letter of introduction */
 .first { 
 	text-indent: 0;
-	margin: .5% .5% 2% .5%;
-	padding: .5% .5% 2% .5%;
+	margin: .5% .5% 0% .5%;
+	padding: .5% .5% 0% .5%;
 }
 
 /* First line of introduction */
@@ -31,7 +31,8 @@
 	text-indent: -9999px;
 	background-repeat: no-repeat;
 	background-position: top left;
-	margin: 0em 0em -1em 0em;
+	margin: 0em 0em 0em 0em;
+	padding: 0em 0em 0em 0em;
 	}
 
 .a { background: url("letters/letter_a.png"); }

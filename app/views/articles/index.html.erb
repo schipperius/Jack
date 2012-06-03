@@ -10,10 +10,7 @@
     <div class="row-fluid">
 
       <section role="main" class="span9 article-brief">
-        <header class="page-header">
-          <h1 class="about"><small>List of Articles</small>
-          </h1>
-        </header>
+        <h1 class="about"><small>List of Articles</small></h1>
 
         <% @articles.each do |article| %>
         <header class="row-fluid page-header">
@@ -22,7 +19,8 @@
             <ul class="thumbnails">
               <li>
                 <div class="thumbnail">
-                  <%= image_tag article.image.url, :size => "250x100" %>
+                  <%= link_to image_tag(article.image.url, 
+                  :size => "200x150"), article %>
                 </div>
               </li>
             </ul>
