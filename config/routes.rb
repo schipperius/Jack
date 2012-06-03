@@ -13,12 +13,7 @@ Jack::Application.routes.draw do
   match '/integrate',   :to => 'augment#integrate'
   match '/maps',        :to => 'augment#maps'
 
-  # The colophon resource is used to add tools to colophon list
-  resources :colophons
-  
-#  match 'colophons/:id'   => 'show#view'
-  match 'colophons'       => 'colophons#index'
-end
+  end
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
