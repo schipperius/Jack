@@ -43,10 +43,8 @@
             <%= raw @article.introduction %>
           </div>
         </section>
-        <ul class="nav nav-pills">
-          <li><%= link_to "< Previous Article", @article.previous %></li>
-          <li><%= link_to "Next Article >", @article.next %></li>
-        </ul>
+        
+
       </header>
 
       <!-- Article Navigation
@@ -59,6 +57,8 @@
             Current Article</a></li>
             <li><a href="#2" data-toggle="tab">Comments</a></li>
             <li><a href="#3" data-toggle="tab">Similar Articles</a></li>
+            <%= content_tag :li, link_to("Next Article", @article.next), :class => "next" if !@article.last_published? && @article.next %>
+            <%= content_tag :li, link_to("Previous Article", @article.previous), :class => "previous" if @article.previous %>
           </ul>
 
           <div class="tab-content">

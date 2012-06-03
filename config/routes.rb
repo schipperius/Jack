@@ -9,16 +9,6 @@ Jack::Application.routes.draw do
   # The root of this site points to the articles index
   root                  :to => "articles#index"
 
-  # The "about" pages, non-article static pages
-  match '/acknowl',     :to => 'about#acknowl'
-  match '/author',      :to => 'about#author'
-  #  match '/colophon',    :to => 'about#colophon'
-  match '/copyright',   :to => 'about#copyright'
-  match '/foreword',    :to => 'about#foreword'
-  match '/intro',       :to => 'about#intro'
-  match '/preface',     :to => 'about#preface'
-  match '/toc',         :to => 'about#toc'
-
   match '/galleries',   :to => 'augment#galleries'
   match '/integrate',   :to => 'augment#integrate'
   match '/maps',        :to => 'augment#maps'

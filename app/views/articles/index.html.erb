@@ -10,7 +10,7 @@
     <div class="row-fluid">
 
       <section role="main" class="span9 article-brief">
-        <h1 class="about"><small>List of Articles</small></h1>
+        <h1 class="about"><small>Recent Articles</small></h1>
 
         <% @articles.each do |article| %>
         <header class="row-fluid page-header">
@@ -19,7 +19,10 @@
             <ul class="thumbnails">
               <li>
                 <div class="thumbnail">
-                  <%= link_to image_tag(article.image.url, :size => "200x150"), article %>
+                  <%= link_to image_tag(article.image.url, 
+                  :size => "200x150", 
+                  :alt => article.title, 
+                  :title => article.title), article %>
                 </div>
               </li>
             </ul>
@@ -46,7 +49,8 @@
             </h3>
 
             <p class="article-intro">
-              <%= truncate(strip_tags(article.introduction), :length => 500, :separator => ' ') %>..
+              <%= truncate(strip_tags(article.introduction), 
+              :length => 500, :separator => ' ') %>..
               <%= link_to 'read more', article %>
             </p>
           </section>
@@ -55,7 +59,8 @@
         <% end %>
 
         <footer class="pagination pull-right page-header">
-          <%= will_paginate :previous_label => h("<"), :next_label => h(">") %>
+          <%= will_paginate :previous_label => h("<"), 
+          :next_label => h(">") %>
         </footer>
       </section>
 
