@@ -23,31 +23,32 @@
   YXJ0aWNsZS1pbWFnZXMvMi1rYXR3aWprLWFhbi16ZWUvb3VkZS1yaWpuLmpw
   Zw==
 : article-images/2-katwijk-aan-zee/oude-rijn-707ba8eadcf8402279caec6c6afdae0f.jpg
-? !binary |-
-  YXJ0aWNsZS1pbWFnZXMvMy1pbnRyb2R1Y3Rpb24vZ2VuZXZhLWJpYmxlLmpw
-  Zw==
-: article-images/3-introduction/geneva-bible-c5fa281149dae287c1d7c3a207ae909d.jpg
 !binary "YXJ0aWNsZS1pbWFnZXMvMy1wcmVmYWNlL2JhcnJlbi1wcmFpcmllLmpwZw==": article-images/3-preface/barren-prairie-566dd83b0c07e6d6f2395fe7d7f9e70d.jpg
 !binary "YXJ0aWNsZS1pbWFnZXMvMy1wcmVmYWNlL2phY2stbyctbGFudGVybi5wbmc=": article-images/3-preface/jack-o'-lantern-6b67e7733372be358beb8cde7a70ea14.png
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9jaHJvbWUucG5n": article-images/4-colophon/chrome-27e0e00b94b6f2212d4cee95872d9ed5.png
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9naXQucG5n": article-images/4-colophon/git-8675c0809ffa0ca627127c8dbb3c868e.png
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9ncm93bC5qcGVn": article-images/4-colophon/growl-a2c3adb309c006d390d1909fe1d1967e.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9oZXJva3UuanBlZw==": article-images/4-colophon/heroku-a1a8e2b764c1bf5536c9e5401f31a470.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9ob21lYnJldy5qcGVn": article-images/4-colophon/homebrew-472007ac9874549c4188082c9d110581.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9pbWFnZW1hZ2ljay5qcGVn": article-images/4-colophon/imagemagick-f7a642e0ef538dbb8fc3b322ff7c11fb.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9pdGVybTIucG5n": article-images/4-colophon/iterm2-ac308c1d26333192c470bc80cc88ae19.png
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9vY3RvY2F0LnBuZw==": article-images/4-colophon/octocat-ea238333806b06da7d8bf6753ff2cf87.png
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9vaG15enNoLmpwZWc=": article-images/4-colophon/ohmyzsh-58080f82adf3f915b45b86175027039f.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9vc3hsaW9uLnBuZw==": article-images/4-colophon/osxlion-ed06372773150980badde9114f5db443.png
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9wb3N0Z3Jlc3FsLnBuZw==": article-images/4-colophon/postgresql-480ce889ffd8ff6cf64d964a955250fc.png
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9yYWlscy5wbmc=": article-images/4-colophon/rails-50427526804bba0aa5e485250a2846c9.png
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9ydWJ5LmpwZWc=": article-images/4-colophon/ruby-58093e86943aa1e63a7b921ff1f560c6.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9ydWJ5Z2Vtcy5qcGVn": article-images/4-colophon/rubygems-fef0a41aeece1d99b6af28fc6f28b33d.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi9ydm0ucG5n": article-images/4-colophon/rvm-75b6df3d66d98760af74d6ceb46b0325.png
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi90ZXh0bWF0ZS5qcGVn": article-images/4-colophon/textmate-843316bc0a2c8fbc147752904bad9d80.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi93Z2V0LmpwZWc=": article-images/4-colophon/wget-50fe7c3b2d652ad42796b48883192956.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi94Y29kZS5qcGVn": article-images/4-colophon/xcode-7eeb4357da0658275800caa6fd7abd6a.jpeg
-!binary "YXJ0aWNsZS1pbWFnZXMvNC1jb2xvcGhvbi96c2gucG5n": article-images/4-colophon/zsh-de9ce1c0518ab7cbc2f107886b668431.png
+? !binary |-
+  YXJ0aWNsZS1pbWFnZXMvNC1pbnRyb2R1Y3Rpb24vZ2VuZXZhLWJpYmxlLmpw
+  Zw==
+: article-images/4-introduction/geneva-bible-c5fa281149dae287c1d7c3a207ae909d.jpg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9hcHBsZS5wbmc=": article-images/5-colophon/apple-16e5c7442e92a42d4b23bcf3082908ae.png
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9jaHJvbWUucG5n": article-images/5-colophon/chrome-27e0e00b94b6f2212d4cee95872d9ed5.png
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9naXQucG5n": article-images/5-colophon/git-8675c0809ffa0ca627127c8dbb3c868e.png
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9ncm93bC5qcGVn": article-images/5-colophon/growl-a2c3adb309c006d390d1909fe1d1967e.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9oZXJva3UuanBlZw==": article-images/5-colophon/heroku-a1a8e2b764c1bf5536c9e5401f31a470.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9ob21lYnJldy5qcGVn": article-images/5-colophon/homebrew-472007ac9874549c4188082c9d110581.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9pbWFnZW1hZ2ljay5qcGVn": article-images/5-colophon/imagemagick-f7a642e0ef538dbb8fc3b322ff7c11fb.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9pdGVybTIucG5n": article-images/5-colophon/iterm2-ac308c1d26333192c470bc80cc88ae19.png
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9vY3RvY2F0LnBuZw==": article-images/5-colophon/octocat-ea238333806b06da7d8bf6753ff2cf87.png
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9vaG15enNoLmpwZWc=": article-images/5-colophon/ohmyzsh-58080f82adf3f915b45b86175027039f.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9vc3hsaW9uLnBuZw==": article-images/5-colophon/osxlion-ed06372773150980badde9114f5db443.png
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9wb3N0Z3Jlc3FsLnBuZw==": article-images/5-colophon/postgresql-480ce889ffd8ff6cf64d964a955250fc.png
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9yYWlscy5wbmc=": article-images/5-colophon/rails-50427526804bba0aa5e485250a2846c9.png
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9ydWJ5LmpwZWc=": article-images/5-colophon/ruby-58093e86943aa1e63a7b921ff1f560c6.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9ydWJ5Z2Vtcy5qcGVn": article-images/5-colophon/rubygems-fef0a41aeece1d99b6af28fc6f28b33d.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi9ydm0ucG5n": article-images/5-colophon/rvm-75b6df3d66d98760af74d6ceb46b0325.png
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi90ZXh0bWF0ZS5qcGVn": article-images/5-colophon/textmate-843316bc0a2c8fbc147752904bad9d80.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi93Z2V0LmpwZWc=": article-images/5-colophon/wget-50fe7c3b2d652ad42796b48883192956.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi94Y29kZS5qcGVn": article-images/5-colophon/xcode-7eeb4357da0658275800caa6fd7abd6a.jpeg
+!binary "YXJ0aWNsZS1pbWFnZXMvNS1jb2xvcGhvbi96c2gucG5n": article-images/5-colophon/zsh-de9ce1c0518ab7cbc2f107886b668431.png
 !binary "Ym9vdHN0cmFwL2dseXBoaWNvbnMtaGFsZmxpbmdzLXdoaXRlLnBuZw==": bootstrap/glyphicons-halflings-white-ef3d5b8d6a297804352b4a46fdb5466d.png
 !binary "Ym9vdHN0cmFwL2dseXBoaWNvbnMtaGFsZmxpbmdzLnBuZw==": bootstrap/glyphicons-halflings-0e7ff93d8f48fe1f5f762e4312e78da7.png
 !binary "ZmF2aWNvbi5wbmc=": favicon-cb9c7a106a43cf64a4319c2c2e6b78cd.png
@@ -91,7 +92,7 @@
 !binary "dGl0bGUucG5n": title-2b19d4db28539967ed0a2f1247e00bde.png
 !binary "YXBwbGljYXRpb24uanM=": application-bb3f1db7bd31883b780569f136d6a6a0.js
 !binary "bW9kZXJuaXpyLmpz": modernizr-9bca90903f85924afe6be3ba5f414faf.js
-!binary "YXBwbGljYXRpb24uY3Nz": application-620c84a8e714b59d02b6b540df234dd3.css
+!binary "YXBwbGljYXRpb24uY3Nz": application-86853359aed35e039db39e2d91679456.css
 !binary "Z2x5cGhpY29ucy1oYWxmbGluZ3Mtd2hpdGUucG5n": glyphicons-halflings-white-ef3d5b8d6a297804352b4a46fdb5466d.png
 !binary "Z2x5cGhpY29ucy1oYWxmbGluZ3MucG5n": glyphicons-halflings-0e7ff93d8f48fe1f5f762e4312e78da7.png
 !binary "Ym9vdHN0cmFwLmpz": bootstrap-2553795c8272a4e04cf5b82c5439ed95.js
