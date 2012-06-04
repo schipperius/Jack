@@ -21,15 +21,15 @@
 
       <!-- Article Header
       ================================================= -->
-      <header class="row-fluid page-header">
-        <section class="article-image span5 columns pull-left">
+      <header class="row-fluid span12 page-header">
+        <section class="span4 pull-left   article-image">
           <%= raw @article.title_image %>
         </section>
-        <section class="article-text span7 pull-right">
+        <div class="span8 pull-right article-text">
           <h3 class="article-position">
             <strong>
               <span>#<%= raw @article.position %> - </span>
-              <span><%= raw @article.title %></span>          
+              <span><%= raw @article.title %></span>
             </strong>
           </h3>
           <h4 class="article-sub-title">
@@ -42,9 +42,7 @@
           <div class="article-intro">
             <%= raw @article.introduction %>
           </div>
-        </section>
-        
-
+        </div>
       </header>
 
       <!-- Article Navigation

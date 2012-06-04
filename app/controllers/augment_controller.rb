@@ -1,7 +1,5 @@
 class AugmentController < ApplicationController
 
-  layout "augment"
-
   def maps
     @title = "Maps"
   end
