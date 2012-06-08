@@ -23,7 +23,7 @@ group :development, :test do
   gem 'sqlite3' # needed for taps to work with Heroku
   gem 'pg', '0.12.2'
   gem "taps", "~> 0.3.23"
-  gem "factory_girl_rails", "~> 3.2.0"
+  gem "factory_girl_rails", "~> 3.3.0"
   gem 'rspec-rails', '~> 2.9.0'
   gem "foreman", "~> 0.40.0"
   gem 'guard-spork', '0.3.2'
