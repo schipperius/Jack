@@ -36,13 +36,19 @@
             <%= @article.published_at.strftime('%b %d, %Y') %> |
             <%= link_to "tag 1", root_url %> |
             <%= link_to "tag 2", root_url %> |
-            <%= link_to "tag 3", root_url %>
+            <%= link_to "tag 3", root_url %> |
+            <%= link_to "tag 4", root_url %> |
+            <%= link_to "tag 5", root_url %>
           </h4>
           <br/>
           <div class="article-intro">
             <%= raw @article.introduction %>
           </div>
         </div>
+        <ul class="pull-right">
+          <%= content_tag :li, link_to("Next Article", @article.next), :class => "next btn" if !@article.last_published? && @article.next %>
+          <%= content_tag :li, link_to("Previous Article", @article.previous), :class => "previous btn" if @article.previous %>
+        </ul>
       </header>
 
       <!-- Article Navigation
@@ -55,8 +61,6 @@
             Current Article</a></li>
             <li><a href="#2" data-toggle="tab">Comments</a></li>
             <li><a href="#3" data-toggle="tab">Similar Articles</a></li>
-            <%= content_tag :li, link_to("Next Article", @article.next), :class => "next" if !@article.last_published? && @article.next %>
-            <%= content_tag :li, link_to("Previous Article", @article.previous), :class => "previous" if @article.previous %>
           </ul>
 
           <div class="tab-content">
